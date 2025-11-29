@@ -79,7 +79,7 @@
 }
 
 .option-button {
-  min-height: 100px;
+  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,8 +89,10 @@
 
 .flag-option {
   max-width: 150px;
-  max-height: 100px;
+  height: 90px;
+  width: auto;
   border: 2px solid #ffffff;
+  object-fit: contain;
 }
 
 .feedback {
@@ -157,6 +159,7 @@
 
   .option-button {
     font-size: 0.7rem;
+    height: 100px;
   }
 
   .flag-question {
@@ -166,6 +169,6 @@
 
   .flag-option {
     max-width: 100px;
-    max-height: 70px;
+    height: 60px;
   }
 }

@@ -1,15 +1,22 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import './HighScoreEntry.css';
 
 function HighScoreEntry({ time, mode, onSubmit }) {
   const [name, setName] = useState(['', '', '']);
   const [currentChar, setCurrentChar] = useState(0);
+  const inputRefs = useRef([]);
 
   const formatTime = (seconds) => {
     const mins = Math.floor(seconds / 60);
     const secs = (seconds % 60).toFixed(1);
     return `${mins}:${secs.padStart(4, '0')}`;
   };
+
+  useEffect(() => {
+    if (inputRefs.current[currentChar]) {
+      inputRefs.current[currentChar].focus();
+    }
+  }, [currentChar]);
 
   const handleCharChange = (index, value) => {
     const newName = [...name];
@@ -62,13 +69,13 @@ function HighScoreEntry({ time, mode, onSubmit }) {
           {[0, 1, 2].map((idx) => (
             <input
               key={idx}
+              ref={(el) => (inputRefs.current[idx] = el)}
               type="text"
               maxLength="1"
               value={name[idx]}
               onChange={(e) => handleCharChange(idx, e.target.value)}
               onFocus={() => setCurrentChar(idx)}
               className={`name-char ${currentChar === idx ? 'active' : ''}`}
-              autoFocus={idx === 0}
             />
           ))}
         </div>
