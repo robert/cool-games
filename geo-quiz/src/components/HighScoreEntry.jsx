@@ -6,6 +6,8 @@ function HighScoreEntry({ time, score, mode, onSubmit }) {
   const [currentChar, setCurrentChar] = useState(0);
   const inputRefs = useRef([]);
   const isTriviaMode = mode === 'space-trivia';
+  const isMusicMode = mode === 'music-intervals';
+  const isScoreBased = isTriviaMode || isMusicMode;
 
   const formatTime = (seconds) => {
     const mins = Math.floor(seconds / 60);
@@ -39,7 +41,7 @@ function HighScoreEntry({ time, score, mode, onSubmit }) {
       // Add new score
       const newScore = {
         name: playerName,
-        ...(isTriviaMode ? { score: score } : { time: time }),
+        ...(isScoreBased ? { score: score } : { time: time }),
         mode: mode,
         date: new Date().toISOString()
       };
@@ -47,7 +49,7 @@ function HighScoreEntry({ time, score, mode, onSubmit }) {
       existingScores.push(newScore);
 
       // Sort appropriately and keep top 10
-      if (isTriviaMode) {
+      if (isScoreBased) {
         existingScores.sort((a, b) => b.score - a.score); // Higher score is better
       } else {
         existingScores.sort((a, b) => a.time - b.time); // Lower time is better
@@ -65,8 +67,8 @@ function HighScoreEntry({ time, score, mode, onSubmit }) {
       <h1 className="arcade-title">NEW HIGH SCORE!</h1>
 
       <div className="score-display">
-        <div className="score-label">{isTriviaMode ? 'YOUR SCORE' : 'YOUR TIME'}</div>
-        <div className="score-time">{isTriviaMode ? score : formatTime(time)}</div>
+        <div className="score-label">{isScoreBased ? 'YOUR SCORE' : 'YOUR TIME'}</div>
+        <div className="score-time">{isScoreBased ? score : formatTime(time)}</div>
       </div>
 
       <div className="name-entry">

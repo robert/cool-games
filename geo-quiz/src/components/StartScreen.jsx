@@ -45,6 +45,13 @@ function StartScreen({ onStartGame, onViewHighScores }) {
         </button>
 
         <button
+          className="arcade-button"
+          onClick={() => onStartGame('music-intervals')}
+        >
+          MUSIC INTERVALS
+        </button>
+
+        <button
           className="arcade-button secondary"
           onClick={onViewHighScores}
         >

@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import './GameScreen.css';
 import spaceTriviaData from '../spaceTriviaData.json';
+import { playInterval, getIntervals } from '../utils/audioUtils';
 
 function GameScreen({ mode, countries, onGameEnd }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -17,28 +18,37 @@ function GameScreen({ mode, countries, onGameEnd }) {
 
   const TOTAL_QUESTIONS = 20;
   const isTriviaMode = mode === 'space-trivia';
+  const isMusicMode = mode === 'music-intervals';
 
   // Generate random question pool at start
   useEffect(() => {
     if (mode === 'space-trivia') {
       const shuffled = [...spaceTriviaData].sort(() => Math.random() - 0.5);
       setQuestionPool(shuffled.slice(0, TOTAL_QUESTIONS));
+    } else if (mode === 'music-intervals') {
+      const intervals = getIntervals();
+      const musicQuestions = [];
+      for (let i = 0; i < TOTAL_QUESTIONS; i++) {
+        const correctInterval = intervals[Math.floor(Math.random() * intervals.length)];
+        musicQuestions.push({ correctInterval });
+      }
+      setQuestionPool(musicQuestions);
     } else {
       const shuffled = [...countries].sort(() => Math.random() - 0.5);
       setQuestionPool(shuffled.slice(0, TOTAL_QUESTIONS));
     }
   }, [countries, mode]);
 
-  // Timer (only for non-trivia modes)
+  // Timer (only for geography modes)
   useEffect(() => {
-    if (isTriviaMode) return;
+    if (isTriviaMode || isMusicMode) return;
 
     const timer = setInterval(() => {
       setTime(t => t + 0.1);
     }, 100);
 
     return () => clearInterval(timer);
-  }, [isTriviaMode]);
+  }, [isTriviaMode, isMusicMode]);
 
   // Generate question
   const generateQuestion = useCallback(() => {
@@ -54,6 +64,33 @@ function GameScreen({ mode, countries, onGameEnd }) {
       })));
       setCorrectAnswer(triviaQ.correct);
       setExplanation(triviaQ.explanation || 'No additional information available.');
+      return;
+    }
+
+    if (mode === 'music-intervals') {
+      const musicQ = questionPool[currentQuestion];
+      const allIntervals = getIntervals();
+      const correctInterval = musicQ.correctInterval;
+
+      // Get 4 wrong options
+      const wrongIntervals = allIntervals
+        .filter(interval => interval !== correctInterval)
+        .sort(() => Math.random() - 0.5)
+        .slice(0, 4);
+
+      // Combine and shuffle
+      const allOptions = [correctInterval, ...wrongIntervals].sort(() => Math.random() - 0.5);
+
+      setQuestion('Listen to the interval');
+      setOptions(allOptions.map(interval => ({
+        value: interval,
+        display: interval,
+        label: interval
+      })));
+      setCorrectAnswer(correctInterval);
+
+      // Play the interval automatically
+      setTimeout(() => playInterval(correctInterval), 300);
       return;
     }
 
@@ -124,8 +161,8 @@ function GameScreen({ mode, countries, onGameEnd }) {
       setScore(s => s + 1);
     } else {
       setFeedback('WRONG!');
-      if (!isTriviaMode) {
-        setTime(t => t + 10); // Add 10 second penalty (not in trivia mode)
+      if (!isTriviaMode && !isMusicMode) {
+        setTime(t => t + 10); // Add 10 second penalty (only for geography modes)
       }
     }
 
@@ -153,7 +190,7 @@ function GameScreen({ mode, countries, onGameEnd }) {
         }
       }, 1000); // Show correct answer for 1 second
     }
-  }, [correctAnswer, currentQuestion, onGameEnd, time, score, isTriviaMode]);
+  }, [correctAnswer, currentQuestion, onGameEnd, time, score, isTriviaMode, isMusicMode]);
 
   // Keyboard shortcuts
   useEffect(() => {
@@ -185,7 +222,7 @@ function GameScreen({ mode, countries, onGameEnd }) {
           <span className="stat-label">QUESTION</span>
           <span className="stat-value">{currentQuestion + 1}/{TOTAL_QUESTIONS}</span>
         </div>
-        {!isTriviaMode && (
+        {!isTriviaMode && !isMusicMode && (
           <div className="game-stat">
             <span className="stat-label">TIME</span>
             <span className="stat-value timer">{formatTime(time)}</span>
@@ -204,9 +241,17 @@ function GameScreen({ mode, countries, onGameEnd }) {
           </div>
         ) : (
           <>
-            <div className="question-label">IDENTIFY:</div>
+            <div className="question-label">{isMusicMode ? 'LISTEN & IDENTIFY:' : 'IDENTIFY:'}</div>
             <div className="question">
               {question}
+              {isMusicMode && (
+                <button
+                  className="replay-button"
+                  onClick={() => playInterval(correctAnswer)}
+                >
+                  🔊 REPLAY
+                </button>
+              )}
             </div>
           </>
         )}

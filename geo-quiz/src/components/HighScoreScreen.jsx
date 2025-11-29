@@ -4,6 +4,8 @@ import './HighScoreScreen.css';
 function HighScoreScreen({ onBackToStart, mode, currentTime, currentScore }) {
   const [highScores, setHighScores] = useState([]);
   const isTriviaMode = mode === 'space-trivia';
+  const isMusicMode = mode === 'music-intervals';
+  const isScoreBased = isTriviaMode || isMusicMode;
 
   useEffect(() => {
     const storageKey = mode ? `geoQuizHighScores_${mode}` : 'geoQuizHighScores';
@@ -23,7 +25,8 @@ function HighScoreScreen({ onBackToStart, mode, currentTime, currentScore }) {
       'flag-to-country': 'FLAG→COUNTRY',
       'country-to-capital': 'COUNTRY→CAPITAL',
       'capital-to-country': 'CAPITAL→COUNTRY',
-      'space-trivia': 'SPACE TRIVIA'
+      'space-trivia': 'SPACE TRIVIA',
+      'music-intervals': 'MUSIC INTERVALS'
     };
     return modes[mode] || mode;
   };
@@ -36,7 +39,7 @@ function HighScoreScreen({ onBackToStart, mode, currentTime, currentScore }) {
         <div className="scores-header">
           <span className="rank-col">RANK</span>
           <span className="name-col">NAME</span>
-          <span className="time-col">{isTriviaMode ? 'SCORE' : 'TIME'}</span>
+          <span className="time-col">{isScoreBased ? 'SCORE' : 'TIME'}</span>
           {!mode && <span className="mode-col">MODE</span>}
         </div>
 
@@ -46,7 +49,7 @@ function HighScoreScreen({ onBackToStart, mode, currentTime, currentScore }) {
           </div>
         ) : (
           highScores.map((score, idx) => {
-            const isHighlighted = isTriviaMode
+            const isHighlighted = isScoreBased
               ? (currentScore && score.score === currentScore)
               : (currentTime && Math.abs(score.time - currentTime) < 0.1);
 

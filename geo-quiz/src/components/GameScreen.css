@@ -62,8 +62,39 @@
   text-shadow: 0 0 10px #ffffff;
   min-height: 90px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 20px;
+}
+
+.replay-button {
+  background: linear-gradient(to bottom, #ffff00 0%, #cccc00 100%);
+  border: 3px solid #ffff00;
+  color: #000000;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.7rem;
+  padding: 12px 20px;
+  cursor: pointer;
+  text-shadow: none;
+  box-shadow:
+    0 0 20px rgba(255, 255, 0, 0.5),
+    inset 0 0 10px rgba(255, 255, 255, 0.2);
+  transition: all 0.1s;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+
+.replay-button:hover {
+  background: linear-gradient(to bottom, #ffff77 0%, #ffff00 100%);
+  box-shadow:
+    0 0 30px rgba(255, 255, 0, 0.8),
+    inset 0 0 15px rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.replay-button:active {
+  transform: translateY(2px);
 }
 
 .flag-question {
