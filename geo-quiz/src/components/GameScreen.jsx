@@ -90,7 +90,7 @@ function GameScreen({ mode, countries, onGameEnd }) {
     generateQuestion();
   }, [generateQuestion]);
 
-  const handleAnswer = (answer) => {
+  const handleAnswer = useCallback((answer) => {
     const isCorrect = answer === correctAnswer;
 
     if (isCorrect) {
@@ -109,7 +109,24 @@ function GameScreen({ mode, countries, onGameEnd }) {
         setCurrentQuestion(q => q + 1);
       }
     }, 1000);
-  };
+  }, [correctAnswer, currentQuestion, onGameEnd, time]);
+
+  // Keyboard shortcuts
+  useEffect(() => {
+    const handleKeyPress = (e) => {
+      if (feedback !== null) return; // Don't accept input during feedback
+
+      const key = e.key;
+      const num = parseInt(key);
+
+      if (num >= 1 && num <= 5 && options[num - 1]) {
+        handleAnswer(options[num - 1].value);
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyPress);
+    return () => window.removeEventListener('keydown', handleKeyPress);
+  }, [options, feedback, handleAnswer]);
 
   const formatTime = (seconds) => {
     const mins = Math.floor(seconds / 60);
@@ -149,7 +166,8 @@ function GameScreen({ mode, countries, onGameEnd }) {
             onClick={() => handleAnswer(option.value)}
             disabled={feedback !== null}
           >
-            {option.display}
+            <span className="option-number">{idx + 1}</span>
+            <span className="option-content">{option.display}</span>
           </button>
         ))}
       </div>

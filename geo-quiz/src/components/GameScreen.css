@@ -1,5 +1,5 @@
 .game-screen {
-  min-height: 600px;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -7,8 +7,9 @@
 .game-header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   gap: 20px;
+  flex-shrink: 0;
 }
 
 .game-stat {
@@ -39,34 +40,35 @@
 .question-container {
   background: rgba(0, 0, 0, 0.3);
   border: 4px solid #00ffff;
-  padding: 30px;
-  margin-bottom: 30px;
+  padding: 20px;
+  margin-bottom: 20px;
   text-align: center;
   box-shadow:
     0 0 20px rgba(0, 255, 255, 0.3),
     inset 0 0 20px rgba(0, 0, 0, 0.5);
+  flex-shrink: 0;
 }
 
 .question-label {
   color: #00ffff;
-  font-size: 0.9rem;
-  margin-bottom: 20px;
+  font-size: 0.8rem;
+  margin-bottom: 15px;
   text-shadow: 0 0 10px #00ffff;
 }
 
 .question {
   color: #ffffff;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   text-shadow: 0 0 10px #ffffff;
-  min-height: 100px;
+  min-height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .flag-question {
-  max-width: 300px;
-  max-height: 200px;
+  max-width: 250px;
+  max-height: 150px;
   border: 4px solid #ffffff;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
@@ -74,22 +76,43 @@
 .options-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 15px;
-  margin-bottom: 20px;
+  gap: 12px;
+  margin-bottom: 15px;
+  flex-shrink: 0;
 }
 
 .option-button {
-  height: 120px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.8rem;
-  padding: 15px;
+  font-size: 0.75rem;
+  padding: 12px;
+  position: relative;
+}
+
+.option-number {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #ffff00;
+  font-size: 1.2rem;
+  text-shadow:
+    0 0 10px #ffff00,
+    0 0 20px #ffff00;
+  font-weight: bold;
+}
+
+.option-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .flag-option {
-  max-width: 150px;
-  height: 90px;
+  max-width: 130px;
+  height: 70px;
   width: auto;
   border: 2px solid #ffffff;
   object-fit: contain;
@@ -97,9 +120,10 @@
 
 .feedback {
   text-align: center;
-  font-size: 2rem;
-  padding: 20px;
+  font-size: 1.8rem;
+  padding: 15px;
   animation: feedbackPulse 0.5s ease-in-out;
+  flex-shrink: 0;
 }
 
 .feedback.correct {
@@ -160,6 +184,12 @@
   .option-button {
     font-size: 0.7rem;
     height: 100px;
+  }
+
+  .option-number {
+    font-size: 1rem;
+    top: 8px;
+    left: 8px;
   }
 
   .flag-question {
