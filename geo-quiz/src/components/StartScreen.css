@@ -1,0 +1,29 @@
+.start-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 600px;
+}
+
+.menu {
+  width: 100%;
+  max-width: 500px;
+}
+
+.menu-title {
+  color: #ffff00;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow:
+    0 0 10px #ffff00,
+    0 0 20px #ffff00;
+  letter-spacing: 3px;
+}
+
+@media (max-width: 768px) {
+  .menu-title {
+    font-size: 0.8rem;
+  }
+}
