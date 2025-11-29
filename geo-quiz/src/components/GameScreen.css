@@ -120,25 +120,29 @@
 
 .feedback {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3rem;
   padding: 20px;
   animation: feedbackPulse 0.5s ease-in-out;
-  flex-shrink: 0;
-  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
 }
 
 .feedback.correct {
   color: #00ff00;
   text-shadow:
     0 0 20px #00ff00,
-    0 0 40px #00ff00;
+    0 0 40px #00ff00,
+    0 0 60px #00ff00;
 }
 
 .feedback.wrong {
   color: #ff0000;
   text-shadow:
     0 0 20px #ff0000,
-    0 0 40px #ff0000;
+    0 0 40px #ff0000,
+    0 0 60px #ff0000;
 }
 
 @keyframes feedbackPulse {

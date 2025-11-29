@@ -152,10 +152,18 @@ function GameScreen({ mode, countries, onGameEnd }) {
       </div>
 
       <div className="question-container">
-        <div className="question-label">IDENTIFY:</div>
-        <div className="question">
-          {question}
-        </div>
+        {feedback ? (
+          <div className={`feedback ${feedback === 'CORRECT!' ? 'correct' : 'wrong'}`}>
+            {feedback}
+          </div>
+        ) : (
+          <>
+            <div className="question-label">IDENTIFY:</div>
+            <div className="question">
+              {question}
+            </div>
+          </>
+        )}
       </div>
 
       <div className="options-container">
@@ -171,12 +179,6 @@ function GameScreen({ mode, countries, onGameEnd }) {
           </button>
         ))}
       </div>
-
-      {feedback && (
-        <div className={`feedback ${feedback === 'CORRECT!' ? 'correct' : 'wrong'}`}>
-          {feedback}
-        </div>
-      )}
     </div>
   );
 }
