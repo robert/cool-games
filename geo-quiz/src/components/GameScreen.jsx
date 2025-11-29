@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import './GameScreen.css';
+import spaceTriviaData from '../spaceTriviaData.json';
 
 function GameScreen({ mode, countries, onGameEnd }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -15,9 +16,14 @@ function GameScreen({ mode, countries, onGameEnd }) {
 
   // Generate random question pool at start
   useEffect(() => {
-    const shuffled = [...countries].sort(() => Math.random() - 0.5);
-    setQuestionPool(shuffled.slice(0, TOTAL_QUESTIONS));
-  }, [countries]);
+    if (mode === 'space-trivia') {
+      const shuffled = [...spaceTriviaData].sort(() => Math.random() - 0.5);
+      setQuestionPool(shuffled.slice(0, TOTAL_QUESTIONS));
+    } else {
+      const shuffled = [...countries].sort(() => Math.random() - 0.5);
+      setQuestionPool(shuffled.slice(0, TOTAL_QUESTIONS));
+    }
+  }, [countries, mode]);
 
   // Timer
   useEffect(() => {
@@ -31,6 +37,18 @@ function GameScreen({ mode, countries, onGameEnd }) {
   // Generate question
   const generateQuestion = useCallback(() => {
     if (questionPool.length === 0 || currentQuestion >= TOTAL_QUESTIONS) return;
+
+    if (mode === 'space-trivia') {
+      const triviaQ = questionPool[currentQuestion];
+      setQuestion(triviaQ.question);
+      setOptions(triviaQ.options.map((opt, idx) => ({
+        value: idx,
+        display: opt,
+        label: opt
+      })));
+      setCorrectAnswer(triviaQ.correct);
+      return;
+    }
 
     const targetCountry = questionPool[currentQuestion];
     const wrongOptions = countries

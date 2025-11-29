@@ -20,7 +20,8 @@ function HighScoreScreen({ onBackToStart, currentTime }) {
       'country-to-flag': 'COUNTRY→FLAG',
       'flag-to-country': 'FLAG→COUNTRY',
       'country-to-capital': 'COUNTRY→CAPITAL',
-      'capital-to-country': 'CAPITAL→COUNTRY'
+      'capital-to-country': 'CAPITAL→COUNTRY',
+      'space-trivia': 'SPACE TRIVIA'
     };
     return modes[mode] || mode;
   };

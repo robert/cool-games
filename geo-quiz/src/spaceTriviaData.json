@@ -1,0 +1,487 @@
+[
+  {
+    "question": "What is the closest star system to our Solar System?",
+    "options": ["Alpha Centauri", "Barnard's Star", "Sirius", "Procyon", "Wolf 359"],
+    "correct": 0
+  },
+  {
+    "question": "How many moons does Jupiter have?",
+    "options": ["95", "67", "53", "82", "41"],
+    "correct": 0
+  },
+  {
+    "question": "What is the largest moon in our Solar System?",
+    "options": ["Ganymede", "Titan", "Callisto", "Io", "Europa"],
+    "correct": 0
+  },
+  {
+    "question": "What type of galaxy is the Milky Way?",
+    "options": ["Barred spiral", "Elliptical", "Irregular", "Spiral", "Lenticular"],
+    "correct": 0
+  },
+  {
+    "question": "What is the Great Red Spot on Jupiter?",
+    "options": ["A massive storm", "A volcanic crater", "An ocean", "A moon shadow", "An impact site"],
+    "correct": 0
+  },
+  {
+    "question": "How long does it take light from the Sun to reach Earth?",
+    "options": ["8 minutes", "4 minutes", "1 minute", "15 minutes", "30 seconds"],
+    "correct": 0
+  },
+  {
+    "question": "What is the hottest planet in our Solar System?",
+    "options": ["Venus", "Mercury", "Mars", "Jupiter", "Saturn"],
+    "correct": 0
+  },
+  {
+    "question": "What is a pulsar?",
+    "options": ["A rotating neutron star", "A dying red giant", "A binary star system", "A black hole", "A white dwarf"],
+    "correct": 0
+  },
+  {
+    "question": "What is the Kuiper Belt?",
+    "options": ["Region beyond Neptune with icy objects", "Asteroid belt between Mars and Jupiter", "Ring around Saturn", "Cloud surrounding the Solar System", "Belt of comets near the Sun"],
+    "correct": 0
+  },
+  {
+    "question": "What causes the auroras (Northern/Southern Lights)?",
+    "options": ["Solar wind interacting with Earth's magnetic field", "Atmospheric reflection of sunlight", "Volcanic ash in the atmosphere", "Moon's gravitational pull", "Lightning in the upper atmosphere"],
+    "correct": 0
+  },
+  {
+    "question": "What is the Cassini Division?",
+    "options": ["A gap in Saturn's rings", "A crater on the Moon", "A valley on Mars", "A cloud band on Jupiter", "A mountain range on Venus"],
+    "correct": 0
+  },
+  {
+    "question": "How many Earths could fit inside the Sun?",
+    "options": ["About 1.3 million", "About 100,000", "About 10,000", "About 500,000", "About 5 million"],
+    "correct": 0
+  },
+  {
+    "question": "What is the temperature at the core of the Sun?",
+    "options": ["15 million degrees Celsius", "1 million degrees Celsius", "100,000 degrees Celsius", "50 million degrees Celsius", "5,000 degrees Celsius"],
+    "correct": 0
+  },
+  {
+    "question": "What is the Oort Cloud?",
+    "options": ["Theoretical cloud of icy objects surrounding the Solar System", "Cloud of gas near Jupiter", "Dust cloud in the asteroid belt", "Nebula forming new stars", "Cloud on Venus"],
+    "correct": 0
+  },
+  {
+    "question": "What planet has the most extreme temperature variations?",
+    "options": ["Mercury", "Venus", "Mars", "Pluto", "Neptune"],
+    "correct": 0
+  },
+  {
+    "question": "What is the largest volcano in the Solar System?",
+    "options": ["Olympus Mons on Mars", "Mauna Loa on Earth", "Maat Mons on Venus", "Io's Loki Patera", "Ascraeus Mons on Mars"],
+    "correct": 0
+  },
+  {
+    "question": "What is dark matter?",
+    "options": ["Unseen matter that makes up most of the universe's mass", "Matter inside black holes", "Burnt-out stars", "Cosmic dust", "Antimatter"],
+    "correct": 0
+  },
+  {
+    "question": "What is the Schwarzschild radius?",
+    "options": ["Radius at which an object becomes a black hole", "Distance from Earth to the Moon", "Size of the Sun's core", "Orbit of Mercury", "Edge of the Solar System"],
+    "correct": 0
+  },
+  {
+    "question": "What are Saturn's rings made of?",
+    "options": ["Ice and rock particles", "Gas and dust", "Liquid methane", "Molten metal", "Solid rock"],
+    "correct": 0
+  },
+  {
+    "question": "What is a supernova?",
+    "options": ["Explosive death of a massive star", "Birth of a new star", "Collision of two stars", "Star being consumed by a black hole", "Star entering red giant phase"],
+    "correct": 0
+  },
+  {
+    "question": "What is the coldest place in the Solar System?",
+    "options": ["Permanently shadowed craters on the Moon", "Pluto's surface", "Neptune's atmosphere", "Triton's poles", "Interstellar space nearby"],
+    "correct": 0
+  },
+  {
+    "question": "How long is a day on Venus?",
+    "options": ["243 Earth days", "24 Earth hours", "59 Earth days", "10 Earth hours", "365 Earth days"],
+    "correct": 0
+  },
+  {
+    "question": "What is the most abundant element in the universe?",
+    "options": ["Hydrogen", "Helium", "Oxygen", "Carbon", "Nitrogen"],
+    "correct": 0
+  },
+  {
+    "question": "What is Io known for?",
+    "options": ["Most volcanically active body in the Solar System", "Deepest ocean in the Solar System", "Largest moon", "Brightest object", "Fastest rotation"],
+    "correct": 0
+  },
+  {
+    "question": "What causes tides on Earth?",
+    "options": ["Moon's gravitational pull", "Earth's rotation", "Sun's heat", "Ocean currents", "Wind patterns"],
+    "correct": 0
+  },
+  {
+    "question": "What is the Hubble Constant?",
+    "options": ["Rate of universe's expansion", "Speed of light", "Age of the universe", "Distance to nearest galaxy", "Size of the observable universe"],
+    "correct": 0
+  },
+  {
+    "question": "What is the main component of Neptune's atmosphere?",
+    "options": ["Hydrogen and helium", "Methane and nitrogen", "Carbon dioxide", "Oxygen and nitrogen", "Ammonia"],
+    "correct": 0
+  },
+  {
+    "question": "What is a quasar?",
+    "options": ["Extremely luminous active galactic nucleus", "Type of star cluster", "Dying red giant", "Binary star system", "Nebula forming stars"],
+    "correct": 0
+  },
+  {
+    "question": "What causes a solar eclipse?",
+    "options": ["Moon passes between Earth and Sun", "Earth passes between Moon and Sun", "Sun's corona expands", "Venus transits the Sun", "Clouds block the Sun"],
+    "correct": 0
+  },
+  {
+    "question": "What is the Roche limit?",
+    "options": ["Distance at which tidal forces break apart a celestial body", "Maximum height of a mountain", "Speed needed to escape Earth", "Limit of the Solar System", "Edge of a black hole"],
+    "correct": 0
+  },
+  {
+    "question": "What is the approximate age of the universe?",
+    "options": ["13.8 billion years", "4.5 billion years", "20 billion years", "8 billion years", "100 billion years"],
+    "correct": 0
+  },
+  {
+    "question": "What is Europa believed to have beneath its ice?",
+    "options": ["A liquid water ocean", "Molten rock", "Frozen nitrogen", "Solid metal core", "Methane lakes"],
+    "correct": 0
+  },
+  {
+    "question": "What is the main difference between asteroids and comets?",
+    "options": ["Comets have ice and develop tails", "Asteroids are larger", "Comets are made of metal", "Asteroids orbit closer to Sun", "Comets are always round"],
+    "correct": 0
+  },
+  {
+    "question": "What is the Great Attractor?",
+    "options": ["Gravitational anomaly pulling galaxies", "Largest known black hole", "Center of the Milky Way", "Nearest galaxy cluster", "Edge of the universe"],
+    "correct": 0
+  },
+  {
+    "question": "What is the escape velocity from Earth?",
+    "options": ["11.2 km/s", "5 km/s", "20 km/s", "100 km/s", "1 km/s"],
+    "correct": 0
+  },
+  {
+    "question": "What is Titan's atmosphere primarily made of?",
+    "options": ["Nitrogen", "Methane", "Oxygen", "Carbon dioxide", "Hydrogen"],
+    "correct": 0
+  },
+  {
+    "question": "What is redshift in astronomy?",
+    "options": ["Light stretched as objects move away", "Stars turning red as they age", "Mars appearing red", "Sunset colors", "Red giant stars"],
+    "correct": 0
+  },
+  {
+    "question": "What is the Parker Solar Probe studying?",
+    "options": ["The Sun's corona and solar wind", "Mercury's surface", "Venus's atmosphere", "Solar flares", "Sunspots"],
+    "correct": 0
+  },
+  {
+    "question": "What is the Chandrasekhar limit?",
+    "options": ["Maximum mass of a white dwarf star", "Speed of light limit", "Size of the largest star", "Age of oldest stars", "Number of galaxies"],
+    "correct": 0
+  },
+  {
+    "question": "What causes the seasons on Earth?",
+    "options": ["Earth's axial tilt", "Distance from the Sun", "Solar activity", "Moon's orbit", "Earth's rotation speed"],
+    "correct": 0
+  },
+  {
+    "question": "What is the cosmic microwave background?",
+    "options": ["Radiation leftover from the Big Bang", "Heat from stars", "Radio waves from pulsars", "Energy from black holes", "Light from distant galaxies"],
+    "correct": 0
+  },
+  {
+    "question": "How many planets in our Solar System have rings?",
+    "options": ["Four (Jupiter, Saturn, Uranus, Neptune)", "One (Saturn)", "Two (Saturn, Uranus)", "Three (Jupiter, Saturn, Neptune)", "Five (all outer planets)"],
+    "correct": 0
+  },
+  {
+    "question": "What is Enceladus known for?",
+    "options": ["Geysers of water ice", "Largest crater", "Fastest rotation", "Strongest magnetism", "Highest mountains"],
+    "correct": 0
+  },
+  {
+    "question": "What is gravitational lensing?",
+    "options": ["Light bent by massive objects", "Magnification by telescopes", "Light from the Sun", "Mirror effect on planets", "Reflection in atmospheres"],
+    "correct": 0
+  },
+  {
+    "question": "What is the Fermi Paradox about?",
+    "options": ["Why we haven't found alien life despite high probability", "Why the universe is expanding", "Why stars explode", "Why planets form", "Why galaxies collide"],
+    "correct": 0
+  },
+  {
+    "question": "What is the Trojan asteroids' location?",
+    "options": ["Jupiter's orbital path", "Between Mars and Jupiter", "Near Earth", "Beyond Neptune", "Around Saturn"],
+    "correct": 0
+  },
+  {
+    "question": "What is the solar wind?",
+    "options": ["Stream of charged particles from the Sun", "Wind patterns on the Sun", "Sunlight pressure", "Magnetic field of the Sun", "Heat transfer from the Sun"],
+    "correct": 0
+  },
+  {
+    "question": "What is the Drake Equation used for?",
+    "options": ["Estimating number of alien civilizations", "Calculating planetary orbits", "Measuring star distances", "Predicting eclipses", "Computing galaxy sizes"],
+    "correct": 0
+  },
+  {
+    "question": "What are Van Allen radiation belts?",
+    "options": ["Zones of charged particles around Earth", "Asteroid belts", "Dust clouds in space", "Rings around planets", "Cloud formations"],
+    "correct": 0
+  },
+  {
+    "question": "What is the Wow! signal?",
+    "options": ["Strong radio signal possibly from space", "Discovery of a pulsar", "First satellite transmission", "Hubble's first image", "Apollo 11 communication"],
+    "correct": 0
+  },
+  {
+    "question": "What is the difference between a meteor and a meteorite?",
+    "options": ["Meteorite reaches the ground", "Meteor is larger", "Meteorite is from asteroids", "Meteor is ice-based", "Meteorite is metallic"],
+    "correct": 0
+  },
+  {
+    "question": "What is the habitable zone?",
+    "options": ["Region where liquid water can exist", "Area inside a galaxy", "Safe zone from radiation", "Distance from black holes", "Earth's atmosphere layer"],
+    "correct": 0
+  },
+  {
+    "question": "What is a brown dwarf?",
+    "options": ["Failed star too small to sustain fusion", "Old dying star", "Type of planet", "Asteroid type", "Comet nucleus"],
+    "correct": 0
+  },
+  {
+    "question": "What is the Voyager Golden Record?",
+    "options": ["Message to potential aliens", "Map of the Solar System", "Star catalog", "Instrument on Voyager", "Award for the mission"],
+    "correct": 0
+  },
+  {
+    "question": "What are Lagrange points?",
+    "options": ["Positions where gravitational forces balance", "Points on the Moon", "Star locations", "Telescope positions", "Asteroid impacts"],
+    "correct": 0
+  },
+  {
+    "question": "What is Betelgeuse?",
+    "options": ["Red supergiant star in Orion", "Black hole", "Nebula", "Galaxy", "Asteroid"],
+    "correct": 0
+  },
+  {
+    "question": "What is the multiverse theory?",
+    "options": ["Multiple universes may exist", "Multiple stars in systems", "Multiple galaxies", "Many planets", "Different dimensions"],
+    "correct": 0
+  },
+  {
+    "question": "What is nuclear fusion in stars?",
+    "options": ["Hydrogen atoms combining to form helium", "Stars exploding", "Planets forming", "Black holes forming", "Stars cooling down"],
+    "correct": 0
+  },
+  {
+    "question": "What is the Andromeda Galaxy's fate with the Milky Way?",
+    "options": ["They will collide in ~4.5 billion years", "They will drift apart", "They already merged", "They will stay separate", "One will consume the other"],
+    "correct": 0
+  },
+  {
+    "question": "What is Pluto classified as now?",
+    "options": ["Dwarf planet", "Planet", "Asteroid", "Comet", "Moon"],
+    "correct": 0
+  },
+  {
+    "question": "What is the event horizon of a black hole?",
+    "options": ["Point of no return where escape is impossible", "Edge of the visible universe", "Surface of the black hole", "Center of the black hole", "Radiation boundary"],
+    "correct": 0
+  },
+  {
+    "question": "What causes Mercury to have such extreme temperatures?",
+    "options": ["No atmosphere to retain heat", "Too close to the Sun", "Fast rotation", "Volcanic activity", "Thin crust"],
+    "correct": 0
+  },
+  {
+    "question": "What is the Horsehead Nebula?",
+    "options": ["Dark nebula in the Orion constellation", "Planetary nebula", "Supernova remnant", "Star cluster", "Galaxy"],
+    "correct": 0
+  },
+  {
+    "question": "What is stellar nucleosynthesis?",
+    "options": ["Creation of elements inside stars", "Star formation process", "Star death process", "Binary star creation", "Planet formation"],
+    "correct": 0
+  },
+  {
+    "question": "What is the Pioneer Anomaly?",
+    "options": ["Unexplained slowing of Pioneer probes", "Discovery of a new planet", "Communication failure", "Trajectory error", "Equipment malfunction"],
+    "correct": 0
+  },
+  {
+    "question": "What are globular clusters?",
+    "options": ["Spherical collections of old stars", "Young star formations", "Galaxy types", "Asteroid groupings", "Comet families"],
+    "correct": 0
+  },
+  {
+    "question": "What is the Hayabusa2 mission?",
+    "options": ["Japanese asteroid sample return", "Mars rover", "Venus probe", "Saturn orbiter", "Lunar lander"],
+    "correct": 0
+  },
+  {
+    "question": "What is Sagittarius A*?",
+    "options": ["Supermassive black hole at Milky Way's center", "Nearby star", "Constellation", "Nebula", "Asteroid"],
+    "correct": 0
+  },
+  {
+    "question": "What is the observable universe's diameter?",
+    "options": ["93 billion light-years", "13.8 billion light-years", "1 trillion light-years", "46 billion light-years", "200 billion light-years"],
+    "correct": 0
+  },
+  {
+    "question": "What are magnetars?",
+    "options": ["Neutron stars with extreme magnetic fields", "Magnetic planets", "Metal-rich asteroids", "Charged particles", "Magnetic nebulae"],
+    "correct": 0
+  },
+  {
+    "question": "What is panspermia?",
+    "options": ["Theory that life spreads between planets", "Planet formation theory", "Star death process", "Galaxy collision theory", "Universe expansion theory"],
+    "correct": 0
+  },
+  {
+    "question": "What is the Tarantula Nebula?",
+    "options": ["Star-forming region in Large Magellanic Cloud", "Spider-shaped constellation", "Supernova remnant", "Black hole", "Asteroid belt"],
+    "correct": 0
+  },
+  {
+    "question": "What is the CNO cycle?",
+    "options": ["Nuclear fusion process in massive stars", "Orbit of Neptune", "Carbon molecule formation", "Comet trajectory", "Nebula evolution"],
+    "correct": 0
+  },
+  {
+    "question": "What is the cosmic ladder method?",
+    "options": ["Measuring distances in the universe", "Classification of galaxies", "Star evolution stages", "Planet formation steps", "Black hole sizes"],
+    "correct": 0
+  },
+  {
+    "question": "What are mascons on the Moon?",
+    "options": ["Mass concentrations causing gravity anomalies", "Mountain ranges", "Crater types", "Lava flows", "Rock compositions"],
+    "correct": 0
+  },
+  {
+    "question": "What is the Alcubierre drive?",
+    "options": ["Theoretical faster-than-light propulsion", "Ion engine type", "Solar sail design", "Chemical rocket", "Nuclear engine"],
+    "correct": 0
+  },
+  {
+    "question": "What are Population III stars?",
+    "options": ["First generation of stars in the universe", "Stars in globular clusters", "Red giant stars", "White dwarf stars", "Binary stars"],
+    "correct": 0
+  },
+  {
+    "question": "What is the Hill sphere?",
+    "options": ["Region where a body's gravity dominates", "Shape of orbits", "Moon's surface area", "Atmosphere boundary", "Solar system edge"],
+    "correct": 0
+  },
+  {
+    "question": "What is the Bok globule?",
+    "options": ["Dark cloud where stars form", "Type of galaxy", "Black hole variation", "Comet tail", "Asteroid grouping"],
+    "correct": 0
+  },
+  {
+    "question": "What is cosmic inflation?",
+    "options": ["Rapid expansion right after Big Bang", "Star expansion", "Galaxy growth", "Universe's current expansion", "Black hole growth"],
+    "correct": 0
+  },
+  {
+    "question": "What is the Eddington limit?",
+    "options": ["Maximum luminosity of a star", "Speed of light", "Black hole size", "Age of stars", "Temperature limit"],
+    "correct": 0
+  },
+  {
+    "question": "What are Cepheid variables?",
+    "options": ["Stars with predictable brightness changes", "Asteroids with changing orbits", "Comets with variable tails", "Planets with changing seasons", "Galaxies with varying size"],
+    "correct": 0
+  },
+  {
+    "question": "What is the Great Rift in astronomy?",
+    "options": ["Dark dust clouds in the Milky Way", "Canyon on Mars", "Crack on Europa", "Asteroid belt gap", "Valley on the Moon"],
+    "correct": 0
+  },
+  {
+    "question": "What is the Jeans instability?",
+    "options": ["Collapse of gas clouds to form stars", "Black hole formation", "Galaxy collision", "Supernova trigger", "Planet breakup"],
+    "correct": 0
+  },
+  {
+    "question": "What are synodic and sidereal periods?",
+    "options": ["Orbital periods relative to Sun vs stars", "Day vs night lengths", "Seasonal changes", "Eclipse cycles", "Tide patterns"],
+    "correct": 0
+  },
+  {
+    "question": "What is the Methuselah star?",
+    "options": ["One of the oldest known stars", "Brightest star", "Largest star", "Fastest moving star", "Closest star"],
+    "correct": 0
+  },
+  {
+    "question": "What is Hawking radiation?",
+    "options": ["Theoretical radiation from black holes", "Solar radiation", "Cosmic background radiation", "Radiation from pulsars", "Gamma ray bursts"],
+    "correct": 0
+  },
+  {
+    "question": "What is the Local Group?",
+    "options": ["Galaxy cluster containing the Milky Way", "Nearby stars", "Asteroid group", "Planet collection", "Moon system"],
+    "correct": 0
+  },
+  {
+    "question": "What is nuclear pasta?",
+    "options": ["Theoretical material in neutron star crust", "Star formation stage", "Galaxy shape", "Comet composition", "Asteroid type"],
+    "correct": 0
+  },
+  {
+    "question": "What is the cosmic web?",
+    "options": ["Large-scale structure of the universe", "Spider nebula", "Galaxy shapes", "Star patterns", "Asteroid paths"],
+    "correct": 0
+  },
+  {
+    "question": "What is the Strömgren sphere?",
+    "options": ["Ionized region around a hot star", "Planet's magnetosphere", "Black hole's event horizon", "Neutron star shell", "Galaxy core"],
+    "correct": 0
+  },
+  {
+    "question": "What is the Tunguska event?",
+    "options": ["Asteroid/comet explosion over Siberia in 1908", "Supernova observation", "First satellite launch", "Meteor shower", "Eclipse event"],
+    "correct": 0
+  },
+  {
+    "question": "What causes the green color of Uranus and Neptune?",
+    "options": ["Methane in their atmospheres", "Copper compounds", "Algae-like organisms", "Ice crystals", "Reflected Earth light"],
+    "correct": 0
+  },
+  {
+    "question": "What is the cosmic neutrino background?",
+    "options": ["Neutrinos left over from the Big Bang", "Solar neutrinos", "Neutrinos from supernovae", "Neutrinos from black holes", "Neutrinos from Earth"],
+    "correct": 0
+  },
+  {
+    "question": "What is the Kessler syndrome?",
+    "options": ["Cascade of space debris collisions", "Asteroid impact theory", "Star collision result", "Galaxy merger effect", "Black hole formation"],
+    "correct": 0
+  },
+  {
+    "question": "What is the Yarkovsky effect?",
+    "options": ["Force from uneven heating changing asteroid orbits", "Tidal effect on moons", "Solar wind pushing comets", "Gravity assist maneuver", "Light pressure on dust"],
+    "correct": 0
+  },
+  {
+    "question": "What is a circumstellar habitable zone also called?",
+    "options": ["Goldilocks zone", "Oort zone", "Drake zone", "Hubble zone", "Kepler zone"],
+    "correct": 0
+  }
+]

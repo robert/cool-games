@@ -38,6 +38,13 @@ function StartScreen({ onStartGame, onViewHighScores }) {
         </button>
 
         <button
+          className="arcade-button"
+          onClick={() => onStartGame('space-trivia')}
+        >
+          SPACE TRIVIA
+        </button>
+
+        <button
           className="arcade-button secondary"
           onClick={onViewHighScores}
         >
