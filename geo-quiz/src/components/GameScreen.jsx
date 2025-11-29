@@ -108,7 +108,7 @@ function GameScreen({ mode, countries, onGameEnd }) {
       } else {
         setCurrentQuestion(q => q + 1);
       }
-    }, 1000);
+    }, 500);
   }, [correctAnswer, currentQuestion, onGameEnd, time]);
 
   // Keyboard shortcuts

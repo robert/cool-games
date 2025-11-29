@@ -22,8 +22,8 @@ body {
 
 .App {
   width: 100%;
-  max-width: 900px;
-  height: 700px;
+  max-width: 1000px;
+  height: 800px;
 }
 
 .arcade-screen {
@@ -183,7 +183,7 @@ body {
 
 @media (max-width: 768px) {
   .App {
-    height: 600px;
+    height: 650px;
   }
 
   .arcade-title {
