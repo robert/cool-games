@@ -23,7 +23,7 @@ body {
 .App {
   width: 100%;
   max-width: 1000px;
-  height: 800px;
+  min-height: 800px;
 }
 
 .arcade-screen {
@@ -31,14 +31,13 @@ body {
   border: 8px solid #2a2a3e;
   border-radius: 20px;
   padding: 40px;
-  height: 100%;
+  min-height: 100%;
   box-shadow:
     0 0 50px rgba(0, 255, 255, 0.3),
     inset 0 0 50px rgba(0, 0, 0, 0.5),
     0 20px 40px rgba(0, 0, 0, 0.8);
   position: relative;
   animation: screenGlow 2s ease-in-out infinite;
-  overflow: hidden;
 }
 
 @keyframes screenGlow {
@@ -183,7 +182,7 @@ body {
 
 @media (max-width: 768px) {
   .App {
-    height: 650px;
+    min-height: auto;
   }
 
   .arcade-title {

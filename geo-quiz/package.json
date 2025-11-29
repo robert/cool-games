@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://rob.github.io/cool-games/",
+  "homepage": "https://robert.github.io/cool-games/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
