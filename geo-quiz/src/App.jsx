@@ -10,6 +10,7 @@ function App() {
   const [gameState, setGameState] = useState('start'); // start, playing, highScoreEntry, viewHighScores
   const [gameMode, setGameMode] = useState(null);
   const [finalTime, setFinalTime] = useState(0);
+  const [finalScore, setFinalScore] = useState(0);
   const [countries, setCountries] = useState([]);
 
   useEffect(() => {
@@ -25,8 +26,9 @@ function App() {
     setGameState('playing');
   };
 
-  const handleGameEnd = (time) => {
+  const handleGameEnd = (time, score) => {
     setFinalTime(time);
+    setFinalScore(score);
     setGameState('highScoreEntry');
   };
 
@@ -61,6 +63,7 @@ function App() {
       {gameState === 'highScoreEntry' && (
         <HighScoreEntry
           time={finalTime}
+          score={finalScore}
           mode={gameMode}
           onSubmit={handleHighScoreSubmit}
         />
@@ -68,7 +71,9 @@ function App() {
       {gameState === 'viewHighScores' && (
         <HighScoreScreen
           onBackToStart={handleBackToStart}
+          mode={gameMode}
           currentTime={gameState === 'viewHighScores' && finalTime > 0 ? finalTime : null}
+          currentScore={gameState === 'viewHighScores' && finalScore > 0 ? finalScore : null}
         />
       )}
     </div>

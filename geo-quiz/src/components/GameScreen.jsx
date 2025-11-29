@@ -11,8 +11,12 @@ function GameScreen({ mode, countries, onGameEnd }) {
   const [question, setQuestion] = useState(null);
   const [feedback, setFeedback] = useState(null);
   const [questionPool, setQuestionPool] = useState([]);
+  const [showExplanation, setShowExplanation] = useState(false);
+  const [explanation, setExplanation] = useState('');
+  const [selectedAnswer, setSelectedAnswer] = useState(null);
 
   const TOTAL_QUESTIONS = 20;
+  const isTriviaMode = mode === 'space-trivia';
 
   // Generate random question pool at start
   useEffect(() => {
@@ -25,14 +29,16 @@ function GameScreen({ mode, countries, onGameEnd }) {
     }
   }, [countries, mode]);
 
-  // Timer
+  // Timer (only for non-trivia modes)
   useEffect(() => {
+    if (isTriviaMode) return;
+
     const timer = setInterval(() => {
       setTime(t => t + 0.1);
     }, 100);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [isTriviaMode]);
 
   // Generate question
   const generateQuestion = useCallback(() => {
@@ -47,6 +53,7 @@ function GameScreen({ mode, countries, onGameEnd }) {
         label: opt
       })));
       setCorrectAnswer(triviaQ.correct);
+      setExplanation(triviaQ.explanation || 'No additional information available.');
       return;
     }
 
@@ -109,6 +116,7 @@ function GameScreen({ mode, countries, onGameEnd }) {
   }, [generateQuestion]);
 
   const handleAnswer = useCallback((answer) => {
+    setSelectedAnswer(answer);
     const isCorrect = answer === correctAnswer;
 
     if (isCorrect) {
@@ -116,18 +124,36 @@ function GameScreen({ mode, countries, onGameEnd }) {
       setScore(s => s + 1);
     } else {
       setFeedback('WRONG!');
-      setTime(t => t + 10); // Add 10 second penalty
+      if (!isTriviaMode) {
+        setTime(t => t + 10); // Add 10 second penalty (not in trivia mode)
+      }
     }
 
-    setTimeout(() => {
-      setFeedback(null);
-      if (currentQuestion + 1 >= TOTAL_QUESTIONS) {
-        onGameEnd(time);
-      } else {
-        setCurrentQuestion(q => q + 1);
-      }
-    }, 500);
-  }, [correctAnswer, currentQuestion, onGameEnd, time]);
+    // Show explanation overlay for trivia mode
+    if (isTriviaMode) {
+      setShowExplanation(true);
+      setTimeout(() => {
+        setShowExplanation(false);
+        setFeedback(null);
+        setSelectedAnswer(null);
+        if (currentQuestion + 1 >= TOTAL_QUESTIONS) {
+          onGameEnd(time, score + (isCorrect ? 1 : 0));
+        } else {
+          setCurrentQuestion(q => q + 1);
+        }
+      }, 4000); // Longer delay for reading explanation
+    } else {
+      setTimeout(() => {
+        setFeedback(null);
+        setSelectedAnswer(null);
+        if (currentQuestion + 1 >= TOTAL_QUESTIONS) {
+          onGameEnd(time, score);
+        } else {
+          setCurrentQuestion(q => q + 1);
+        }
+      }, 1000); // Show correct answer for 1 second
+    }
+  }, [correctAnswer, currentQuestion, onGameEnd, time, score, isTriviaMode]);
 
   // Keyboard shortcuts
   useEffect(() => {
@@ -159,13 +185,15 @@ function GameScreen({ mode, countries, onGameEnd }) {
           <span className="stat-label">QUESTION</span>
           <span className="stat-value">{currentQuestion + 1}/{TOTAL_QUESTIONS}</span>
         </div>
-        <div className="game-stat">
-          <span className="stat-label">TIME</span>
-          <span className="stat-value timer">{formatTime(time)}</span>
-        </div>
+        {!isTriviaMode && (
+          <div className="game-stat">
+            <span className="stat-label">TIME</span>
+            <span className="stat-value timer">{formatTime(time)}</span>
+          </div>
+        )}
         <div className="game-stat">
           <span className="stat-label">SCORE</span>
-          <span className="stat-value">{score}</span>
+          <span className="stat-value">{score}/{TOTAL_QUESTIONS}</span>
         </div>
       </div>
 
@@ -185,18 +213,39 @@ function GameScreen({ mode, countries, onGameEnd }) {
       </div>
 
       <div className="options-container">
-        {options.map((option, idx) => (
-          <button
-            key={idx}
-            className="option-button arcade-button"
-            onClick={() => handleAnswer(option.value)}
-            disabled={feedback !== null}
-          >
-            <span className="option-number">{idx + 1}</span>
-            <span className="option-content">{option.display}</span>
-          </button>
-        ))}
+        {options.map((option, idx) => {
+          const isCorrectAnswer = option.value === correctAnswer;
+          const isSelected = option.value === selectedAnswer;
+          const showCorrect = feedback && !isSelected && isCorrectAnswer;
+          const showWrong = feedback && isSelected && !isCorrectAnswer;
+
+          return (
+            <button
+              key={idx}
+              className={`option-button arcade-button ${showCorrect ? 'correct-answer' : ''} ${showWrong ? 'wrong-answer' : ''}`}
+              onClick={() => handleAnswer(option.value)}
+              disabled={feedback !== null}
+            >
+              <span className="option-number">{idx + 1}</span>
+              <span className="option-content">{option.display}</span>
+            </button>
+          );
+        })}
       </div>
+
+      {showExplanation && (
+        <div className="explanation-overlay">
+          <div className="explanation-content">
+            <h3 className="explanation-title">{feedback}</h3>
+            <div className="explanation-answer">
+              Correct Answer: {options[correctAnswer]?.label}
+            </div>
+            <div className="explanation-text">
+              {explanation}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

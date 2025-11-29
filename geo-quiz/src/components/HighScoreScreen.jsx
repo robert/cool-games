@@ -1,13 +1,15 @@
 import { useEffect, useState } from 'react';
 import './HighScoreScreen.css';
 
-function HighScoreScreen({ onBackToStart, currentTime }) {
+function HighScoreScreen({ onBackToStart, mode, currentTime, currentScore }) {
   const [highScores, setHighScores] = useState([]);
+  const isTriviaMode = mode === 'space-trivia';
 
   useEffect(() => {
-    const scores = JSON.parse(localStorage.getItem('geoQuizHighScores') || '[]');
+    const storageKey = mode ? `geoQuizHighScores_${mode}` : 'geoQuizHighScores';
+    const scores = JSON.parse(localStorage.getItem(storageKey) || '[]');
     setHighScores(scores);
-  }, [currentTime]);
+  }, [mode, currentTime, currentScore]);
 
   const formatTime = (seconds) => {
     const mins = Math.floor(seconds / 60);
@@ -34,8 +36,8 @@ function HighScoreScreen({ onBackToStart, currentTime }) {
         <div className="scores-header">
           <span className="rank-col">RANK</span>
           <span className="name-col">NAME</span>
-          <span className="time-col">TIME</span>
-          <span className="mode-col">MODE</span>
+          <span className="time-col">{isTriviaMode ? 'SCORE' : 'TIME'}</span>
+          {!mode && <span className="mode-col">MODE</span>}
         </div>
 
         {highScores.length === 0 ? (
@@ -43,17 +45,25 @@ function HighScoreScreen({ onBackToStart, currentTime }) {
             NO SCORES YET
           </div>
         ) : (
-          highScores.map((score, idx) => (
-            <div
-              key={idx}
-              className={`score-row ${currentTime && Math.abs(score.time - currentTime) < 0.1 ? 'highlighted' : ''}`}
-            >
-              <span className="rank-col">{idx + 1}</span>
-              <span className="name-col">{score.name}</span>
-              <span className="time-col">{formatTime(score.time)}</span>
-              <span className="mode-col">{getModeDisplay(score.mode)}</span>
-            </div>
-          ))
+          highScores.map((score, idx) => {
+            const isHighlighted = isTriviaMode
+              ? (currentScore && score.score === currentScore)
+              : (currentTime && Math.abs(score.time - currentTime) < 0.1);
+
+            return (
+              <div
+                key={idx}
+                className={`score-row ${isHighlighted ? 'highlighted' : ''}`}
+              >
+                <span className="rank-col">{idx + 1}</span>
+                <span className="name-col">{score.name}</span>
+                <span className="time-col">
+                  {score.score !== undefined ? score.score : formatTime(score.time)}
+                </span>
+                {!mode && <span className="mode-col">{getModeDisplay(score.mode)}</span>}
+              </div>
+            );
+          })
         )}
       </div>
 

@@ -1,10 +1,11 @@
 import { useState, useRef, useEffect } from 'react';
 import './HighScoreEntry.css';
 
-function HighScoreEntry({ time, mode, onSubmit }) {
+function HighScoreEntry({ time, score, mode, onSubmit }) {
   const [name, setName] = useState(['', '', '']);
   const [currentChar, setCurrentChar] = useState(0);
   const inputRefs = useRef([]);
+  const isTriviaMode = mode === 'space-trivia';
 
   const formatTime = (seconds) => {
     const mins = Math.floor(seconds / 60);
@@ -31,24 +32,29 @@ function HighScoreEntry({ time, mode, onSubmit }) {
   const handleSubmit = () => {
     const playerName = name.join('');
     if (playerName.length === 3) {
-      // Get existing high scores
-      const existingScores = JSON.parse(localStorage.getItem('geoQuizHighScores') || '[]');
+      // Get existing high scores for this mode
+      const storageKey = `geoQuizHighScores_${mode}`;
+      const existingScores = JSON.parse(localStorage.getItem(storageKey) || '[]');
 
       // Add new score
       const newScore = {
         name: playerName,
-        time: time,
+        ...(isTriviaMode ? { score: score } : { time: time }),
         mode: mode,
         date: new Date().toISOString()
       };
 
       existingScores.push(newScore);
 
-      // Sort by time (ascending) and keep top 10
-      existingScores.sort((a, b) => a.time - b.time);
+      // Sort appropriately and keep top 10
+      if (isTriviaMode) {
+        existingScores.sort((a, b) => b.score - a.score); // Higher score is better
+      } else {
+        existingScores.sort((a, b) => a.time - b.time); // Lower time is better
+      }
       const topScores = existingScores.slice(0, 10);
 
-      localStorage.setItem('geoQuizHighScores', JSON.stringify(topScores));
+      localStorage.setItem(storageKey, JSON.stringify(topScores));
 
       onSubmit();
     }
@@ -59,8 +65,8 @@ function HighScoreEntry({ time, mode, onSubmit }) {
       <h1 className="arcade-title">NEW HIGH SCORE!</h1>
 
       <div className="score-display">
-        <div className="score-label">YOUR TIME</div>
-        <div className="score-time">{formatTime(time)}</div>
+        <div className="score-label">{isTriviaMode ? 'YOUR SCORE' : 'YOUR TIME'}</div>
+        <div className="score-time">{isTriviaMode ? score : formatTime(time)}</div>
       </div>
 
       <div className="name-entry">

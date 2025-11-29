@@ -118,6 +118,22 @@
   object-fit: contain;
 }
 
+.option-button.correct-answer {
+  border-color: #00ff00;
+  background: linear-gradient(to bottom, #00ff00 0%, #00aa00 100%);
+  box-shadow:
+    0 0 30px rgba(0, 255, 0, 0.8),
+    inset 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.option-button.wrong-answer {
+  border-color: #ff0000;
+  background: linear-gradient(to bottom, #ff0000 0%, #aa0000 100%);
+  box-shadow:
+    0 0 30px rgba(255, 0, 0, 0.8),
+    inset 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
 .feedback {
   text-align: center;
   font-size: 3rem;
@@ -157,6 +173,89 @@
     transform: scale(1);
     opacity: 1;
   }
+}
+
+.explanation-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.explanation-content {
+  background: linear-gradient(to bottom, #1a1a2e 0%, #0f0f1e 100%);
+  border: 6px solid #00ffff;
+  border-radius: 15px;
+  padding: 40px;
+  max-width: 700px;
+  box-shadow:
+    0 0 50px rgba(0, 255, 255, 0.5),
+    inset 0 0 30px rgba(0, 0, 0, 0.5);
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.explanation-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  animation: feedbackPulse 0.5s ease-in-out;
+}
+
+.explanation-title {
+  color: #00ff00;
+  text-shadow:
+    0 0 20px #00ff00,
+    0 0 40px #00ff00;
+}
+
+.explanation-answer {
+  color: #ffff00;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 25px;
+  padding: 15px;
+  background: rgba(255, 255, 0, 0.1);
+  border: 2px solid #ffff00;
+  text-shadow: 0 0 10px #ffff00;
+}
+
+.explanation-text {
+  color: #ffffff;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  text-align: left;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-left: 4px solid #00ffff;
+  text-shadow: none;
+  font-family: Arial, sans-serif;
 }
 
 @media (max-width: 768px) {

@@ -1,487 +1,1166 @@
 [
   {
     "question": "What is the closest star system to our Solar System?",
-    "options": ["Alpha Centauri", "Barnard's Star", "Sirius", "Procyon", "Wolf 359"],
-    "correct": 0
+    "options": [
+      "Alpha Centauri",
+      "Barnard's Star",
+      "Sirius",
+      "Procyon",
+      "Wolf 359"
+    ],
+    "correct": 0,
+    "explanation": "Alpha Centauri is actually a triple star system located about 4.37 light-years away. It consists of Alpha Centauri A, B, and Proxima Centauri (the closest individual star to our Sun)."
   },
   {
     "question": "How many moons does Jupiter have?",
-    "options": ["95", "67", "53", "82", "41"],
-    "correct": 0
+    "options": [
+      "95",
+      "67",
+      "53",
+      "82",
+      "41"
+    ],
+    "correct": 0,
+    "explanation": "As of 2024, Jupiter has 95 confirmed moons, making it the planet with the most moons in our Solar System, surpassing Saturn's count."
   },
   {
     "question": "What is the largest moon in our Solar System?",
-    "options": ["Ganymede", "Titan", "Callisto", "Io", "Europa"],
-    "correct": 0
+    "options": [
+      "Ganymede",
+      "Titan",
+      "Callisto",
+      "Io",
+      "Europa"
+    ],
+    "correct": 0,
+    "explanation": "Ganymede, orbiting Jupiter, is the largest moon in the Solar System at 5,268 km in diameter - even larger than the planet Mercury!"
   },
   {
     "question": "What type of galaxy is the Milky Way?",
-    "options": ["Barred spiral", "Elliptical", "Irregular", "Spiral", "Lenticular"],
-    "correct": 0
+    "options": [
+      "Barred spiral",
+      "Elliptical",
+      "Irregular",
+      "Spiral",
+      "Lenticular"
+    ],
+    "correct": 0,
+    "explanation": "The Milky Way is a barred spiral galaxy, meaning it has a central bar-shaped structure made of stars with spiral arms extending outward."
   },
   {
     "question": "What is the Great Red Spot on Jupiter?",
-    "options": ["A massive storm", "A volcanic crater", "An ocean", "A moon shadow", "An impact site"],
-    "correct": 0
+    "options": [
+      "A massive storm",
+      "A volcanic crater",
+      "An ocean",
+      "A moon shadow",
+      "An impact site"
+    ],
+    "correct": 0,
+    "explanation": "The Great Red Spot is a gigantic storm that has been raging for at least 300 years. It's large enough to fit three Earths inside it!"
   },
   {
     "question": "How long does it take light from the Sun to reach Earth?",
-    "options": ["8 minutes", "4 minutes", "1 minute", "15 minutes", "30 seconds"],
-    "correct": 0
+    "options": [
+      "8 minutes",
+      "4 minutes",
+      "1 minute",
+      "15 minutes",
+      "30 seconds"
+    ],
+    "correct": 0,
+    "explanation": "Light travels at about 300,000 km/s, covering the ~150 million km distance from the Sun to Earth in approximately 8 minutes and 20 seconds."
   },
   {
     "question": "What is the hottest planet in our Solar System?",
-    "options": ["Venus", "Mercury", "Mars", "Jupiter", "Saturn"],
-    "correct": 0
+    "options": [
+      "Venus",
+      "Mercury",
+      "Mars",
+      "Jupiter",
+      "Saturn"
+    ],
+    "correct": 0,
+    "explanation": "Despite being closer to the Sun, Venus is hotter than Mercury due to its thick atmosphere creating a runaway greenhouse effect, with surface temperatures around 465\u00b0C (869\u00b0F)."
   },
   {
     "question": "What is a pulsar?",
-    "options": ["A rotating neutron star", "A dying red giant", "A binary star system", "A black hole", "A white dwarf"],
-    "correct": 0
+    "options": [
+      "A rotating neutron star",
+      "A dying red giant",
+      "A binary star system",
+      "A black hole",
+      "A white dwarf"
+    ],
+    "correct": 0,
+    "explanation": "Pulsars are rapidly rotating neutron stars that emit beams of electromagnetic radiation. They can spin hundreds of times per second!"
   },
   {
     "question": "What is the Kuiper Belt?",
-    "options": ["Region beyond Neptune with icy objects", "Asteroid belt between Mars and Jupiter", "Ring around Saturn", "Cloud surrounding the Solar System", "Belt of comets near the Sun"],
-    "correct": 0
+    "options": [
+      "Region beyond Neptune with icy objects",
+      "Asteroid belt between Mars and Jupiter",
+      "Ring around Saturn",
+      "Cloud surrounding the Solar System",
+      "Belt of comets near the Sun"
+    ],
+    "correct": 0,
+    "explanation": "The Kuiper Belt extends from Neptune's orbit outward and contains thousands of icy bodies, including dwarf planets like Pluto and Eris."
   },
   {
     "question": "What causes the auroras (Northern/Southern Lights)?",
-    "options": ["Solar wind interacting with Earth's magnetic field", "Atmospheric reflection of sunlight", "Volcanic ash in the atmosphere", "Moon's gravitational pull", "Lightning in the upper atmosphere"],
-    "correct": 0
+    "options": [
+      "Solar wind interacting with Earth's magnetic field",
+      "Atmospheric reflection of sunlight",
+      "Volcanic ash in the atmosphere",
+      "Moon's gravitational pull",
+      "Lightning in the upper atmosphere"
+    ],
+    "correct": 0,
+    "explanation": "Solar wind particles interact with Earth's magnetic field and atmosphere, exciting atoms that then release energy as beautiful colored lights - the auroras."
   },
   {
     "question": "What is the Cassini Division?",
-    "options": ["A gap in Saturn's rings", "A crater on the Moon", "A valley on Mars", "A cloud band on Jupiter", "A mountain range on Venus"],
-    "correct": 0
+    "options": [
+      "A gap in Saturn's rings",
+      "A crater on the Moon",
+      "A valley on Mars",
+      "A cloud band on Jupiter",
+      "A mountain range on Venus"
+    ],
+    "correct": 0,
+    "explanation": "The Cassini Division is the largest gap in Saturn's rings, about 4,800 km wide, caused by gravitational resonance with Saturn's moon Mimas."
   },
   {
     "question": "How many Earths could fit inside the Sun?",
-    "options": ["About 1.3 million", "About 100,000", "About 10,000", "About 500,000", "About 5 million"],
-    "correct": 0
+    "options": [
+      "About 1.3 million",
+      "About 100,000",
+      "About 10,000",
+      "About 500,000",
+      "About 5 million"
+    ],
+    "correct": 0,
+    "explanation": "The Sun's volume is so massive that approximately 1.3 million Earths could fit inside it, though it contains 99.86% of the Solar System's total mass."
   },
   {
     "question": "What is the temperature at the core of the Sun?",
-    "options": ["15 million degrees Celsius", "1 million degrees Celsius", "100,000 degrees Celsius", "50 million degrees Celsius", "5,000 degrees Celsius"],
-    "correct": 0
+    "options": [
+      "15 million degrees Celsius",
+      "1 million degrees Celsius",
+      "100,000 degrees Celsius",
+      "50 million degrees Celsius",
+      "5,000 degrees Celsius"
+    ],
+    "correct": 0,
+    "explanation": "The Sun's core reaches about 15 million degrees Celsius, hot enough to fuse hydrogen into helium through nuclear fusion reactions."
   },
   {
     "question": "What is the Oort Cloud?",
-    "options": ["Theoretical cloud of icy objects surrounding the Solar System", "Cloud of gas near Jupiter", "Dust cloud in the asteroid belt", "Nebula forming new stars", "Cloud on Venus"],
-    "correct": 0
+    "options": [
+      "Theoretical cloud of icy objects surrounding the Solar System",
+      "Cloud of gas near Jupiter",
+      "Dust cloud in the asteroid belt",
+      "Nebula forming new stars",
+      "Cloud on Venus"
+    ],
+    "correct": 0,
+    "explanation": "The Oort Cloud is a theoretical spherical shell of icy objects believed to surround the Solar System at distances up to 100,000 AU from the Sun."
   },
   {
     "question": "What planet has the most extreme temperature variations?",
-    "options": ["Mercury", "Venus", "Mars", "Pluto", "Neptune"],
-    "correct": 0
+    "options": [
+      "Mercury",
+      "Venus",
+      "Mars",
+      "Pluto",
+      "Neptune"
+    ],
+    "correct": 0,
+    "explanation": "Mercury experiences extreme temperature swings because it has almost no atmosphere to retain heat - from 430\u00b0C on the sunny side to -180\u00b0C on the dark side."
   },
   {
     "question": "What is the largest volcano in the Solar System?",
-    "options": ["Olympus Mons on Mars", "Mauna Loa on Earth", "Maat Mons on Venus", "Io's Loki Patera", "Ascraeus Mons on Mars"],
-    "correct": 0
+    "options": [
+      "Olympus Mons on Mars",
+      "Mauna Loa on Earth",
+      "Maat Mons on Venus",
+      "Io's Loki Patera",
+      "Ascraeus Mons on Mars"
+    ],
+    "correct": 0,
+    "explanation": "Olympus Mons on Mars stands about 22 km (72,000 feet) tall - nearly three times the height of Mount Everest - and is about 600 km wide."
   },
   {
     "question": "What is dark matter?",
-    "options": ["Unseen matter that makes up most of the universe's mass", "Matter inside black holes", "Burnt-out stars", "Cosmic dust", "Antimatter"],
-    "correct": 0
+    "options": [
+      "Unseen matter that makes up most of the universe's mass",
+      "Matter inside black holes",
+      "Burnt-out stars",
+      "Cosmic dust",
+      "Antimatter"
+    ],
+    "correct": 0,
+    "explanation": "Dark matter doesn't emit, absorb, or reflect light, making it invisible. Yet it makes up about 85% of the universe's total matter based on gravitational effects."
   },
   {
     "question": "What is the Schwarzschild radius?",
-    "options": ["Radius at which an object becomes a black hole", "Distance from Earth to the Moon", "Size of the Sun's core", "Orbit of Mercury", "Edge of the Solar System"],
-    "correct": 0
+    "options": [
+      "Radius at which an object becomes a black hole",
+      "Distance from Earth to the Moon",
+      "Size of the Sun's core",
+      "Orbit of Mercury",
+      "Edge of the Solar System"
+    ],
+    "correct": 0,
+    "explanation": "The Schwarzschild radius defines the event horizon of a black hole - the point beyond which nothing, not even light, can escape its gravitational pull."
   },
   {
     "question": "What are Saturn's rings made of?",
-    "options": ["Ice and rock particles", "Gas and dust", "Liquid methane", "Molten metal", "Solid rock"],
-    "correct": 0
+    "options": [
+      "Ice and rock particles",
+      "Gas and dust",
+      "Liquid methane",
+      "Molten metal",
+      "Solid rock"
+    ],
+    "correct": 0,
+    "explanation": "Saturn's iconic rings are composed primarily of water ice particles ranging in size from tiny grains to house-sized chunks, with some rock mixed in."
   },
   {
     "question": "What is a supernova?",
-    "options": ["Explosive death of a massive star", "Birth of a new star", "Collision of two stars", "Star being consumed by a black hole", "Star entering red giant phase"],
-    "correct": 0
+    "options": [
+      "Explosive death of a massive star",
+      "Birth of a new star",
+      "Collision of two stars",
+      "Star being consumed by a black hole",
+      "Star entering red giant phase"
+    ],
+    "correct": 0,
+    "explanation": "A supernova occurs when a massive star exhausts its nuclear fuel and its core collapses, causing a catastrophic explosion that can briefly outshine entire galaxies."
   },
   {
     "question": "What is the coldest place in the Solar System?",
-    "options": ["Permanently shadowed craters on the Moon", "Pluto's surface", "Neptune's atmosphere", "Triton's poles", "Interstellar space nearby"],
-    "correct": 0
+    "options": [
+      "Permanently shadowed craters on the Moon",
+      "Pluto's surface",
+      "Neptune's atmosphere",
+      "Triton's poles",
+      "Interstellar space nearby"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Permanently shadowed craters on the Moon!"
   },
   {
     "question": "How long is a day on Venus?",
-    "options": ["243 Earth days", "24 Earth hours", "59 Earth days", "10 Earth hours", "365 Earth days"],
-    "correct": 0
+    "options": [
+      "243 Earth days",
+      "24 Earth hours",
+      "59 Earth days",
+      "10 Earth hours",
+      "365 Earth days"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about 243 Earth days!"
   },
   {
     "question": "What is the most abundant element in the universe?",
-    "options": ["Hydrogen", "Helium", "Oxygen", "Carbon", "Nitrogen"],
-    "correct": 0
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Oxygen",
+      "Carbon",
+      "Nitrogen"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Hydrogen!"
   },
   {
     "question": "What is Io known for?",
-    "options": ["Most volcanically active body in the Solar System", "Deepest ocean in the Solar System", "Largest moon", "Brightest object", "Fastest rotation"],
-    "correct": 0
+    "options": [
+      "Most volcanically active body in the Solar System",
+      "Deepest ocean in the Solar System",
+      "Largest moon",
+      "Brightest object",
+      "Fastest rotation"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Most volcanically active body in the Solar System!"
   },
   {
     "question": "What causes tides on Earth?",
-    "options": ["Moon's gravitational pull", "Earth's rotation", "Sun's heat", "Ocean currents", "Wind patterns"],
-    "correct": 0
+    "options": [
+      "Moon's gravitational pull",
+      "Earth's rotation",
+      "Sun's heat",
+      "Ocean currents",
+      "Wind patterns"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Moon's gravitational pull!"
   },
   {
     "question": "What is the Hubble Constant?",
-    "options": ["Rate of universe's expansion", "Speed of light", "Age of the universe", "Distance to nearest galaxy", "Size of the observable universe"],
-    "correct": 0
+    "options": [
+      "Rate of universe's expansion",
+      "Speed of light",
+      "Age of the universe",
+      "Distance to nearest galaxy",
+      "Size of the observable universe"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Rate of universe's expansion!"
   },
   {
     "question": "What is the main component of Neptune's atmosphere?",
-    "options": ["Hydrogen and helium", "Methane and nitrogen", "Carbon dioxide", "Oxygen and nitrogen", "Ammonia"],
-    "correct": 0
+    "options": [
+      "Hydrogen and helium",
+      "Methane and nitrogen",
+      "Carbon dioxide",
+      "Oxygen and nitrogen",
+      "Ammonia"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Hydrogen and helium!"
   },
   {
     "question": "What is a quasar?",
-    "options": ["Extremely luminous active galactic nucleus", "Type of star cluster", "Dying red giant", "Binary star system", "Nebula forming stars"],
-    "correct": 0
+    "options": [
+      "Extremely luminous active galactic nucleus",
+      "Type of star cluster",
+      "Dying red giant",
+      "Binary star system",
+      "Nebula forming stars"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Extremely luminous active galactic nucleus!"
   },
   {
     "question": "What causes a solar eclipse?",
-    "options": ["Moon passes between Earth and Sun", "Earth passes between Moon and Sun", "Sun's corona expands", "Venus transits the Sun", "Clouds block the Sun"],
-    "correct": 0
+    "options": [
+      "Moon passes between Earth and Sun",
+      "Earth passes between Moon and Sun",
+      "Sun's corona expands",
+      "Venus transits the Sun",
+      "Clouds block the Sun"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Moon passes between Earth and Sun!"
   },
   {
     "question": "What is the Roche limit?",
-    "options": ["Distance at which tidal forces break apart a celestial body", "Maximum height of a mountain", "Speed needed to escape Earth", "Limit of the Solar System", "Edge of a black hole"],
-    "correct": 0
+    "options": [
+      "Distance at which tidal forces break apart a celestial body",
+      "Maximum height of a mountain",
+      "Speed needed to escape Earth",
+      "Limit of the Solar System",
+      "Edge of a black hole"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Distance at which tidal forces break apart a celestial body!"
   },
   {
     "question": "What is the approximate age of the universe?",
-    "options": ["13.8 billion years", "4.5 billion years", "20 billion years", "8 billion years", "100 billion years"],
-    "correct": 0
+    "options": [
+      "13.8 billion years",
+      "4.5 billion years",
+      "20 billion years",
+      "8 billion years",
+      "100 billion years"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about 13.8 billion years!"
   },
   {
     "question": "What is Europa believed to have beneath its ice?",
-    "options": ["A liquid water ocean", "Molten rock", "Frozen nitrogen", "Solid metal core", "Methane lakes"],
-    "correct": 0
+    "options": [
+      "A liquid water ocean",
+      "Molten rock",
+      "Frozen nitrogen",
+      "Solid metal core",
+      "Methane lakes"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about A liquid water ocean!"
   },
   {
     "question": "What is the main difference between asteroids and comets?",
-    "options": ["Comets have ice and develop tails", "Asteroids are larger", "Comets are made of metal", "Asteroids orbit closer to Sun", "Comets are always round"],
-    "correct": 0
+    "options": [
+      "Comets have ice and develop tails",
+      "Asteroids are larger",
+      "Comets are made of metal",
+      "Asteroids orbit closer to Sun",
+      "Comets are always round"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Comets have ice and develop tails!"
   },
   {
     "question": "What is the Great Attractor?",
-    "options": ["Gravitational anomaly pulling galaxies", "Largest known black hole", "Center of the Milky Way", "Nearest galaxy cluster", "Edge of the universe"],
-    "correct": 0
+    "options": [
+      "Gravitational anomaly pulling galaxies",
+      "Largest known black hole",
+      "Center of the Milky Way",
+      "Nearest galaxy cluster",
+      "Edge of the universe"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Gravitational anomaly pulling galaxies!"
   },
   {
     "question": "What is the escape velocity from Earth?",
-    "options": ["11.2 km/s", "5 km/s", "20 km/s", "100 km/s", "1 km/s"],
-    "correct": 0
+    "options": [
+      "11.2 km/s",
+      "5 km/s",
+      "20 km/s",
+      "100 km/s",
+      "1 km/s"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about 11.2 km/s!"
   },
   {
     "question": "What is Titan's atmosphere primarily made of?",
-    "options": ["Nitrogen", "Methane", "Oxygen", "Carbon dioxide", "Hydrogen"],
-    "correct": 0
+    "options": [
+      "Nitrogen",
+      "Methane",
+      "Oxygen",
+      "Carbon dioxide",
+      "Hydrogen"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Nitrogen!"
   },
   {
     "question": "What is redshift in astronomy?",
-    "options": ["Light stretched as objects move away", "Stars turning red as they age", "Mars appearing red", "Sunset colors", "Red giant stars"],
-    "correct": 0
+    "options": [
+      "Light stretched as objects move away",
+      "Stars turning red as they age",
+      "Mars appearing red",
+      "Sunset colors",
+      "Red giant stars"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Light stretched as objects move away!"
   },
   {
     "question": "What is the Parker Solar Probe studying?",
-    "options": ["The Sun's corona and solar wind", "Mercury's surface", "Venus's atmosphere", "Solar flares", "Sunspots"],
-    "correct": 0
+    "options": [
+      "The Sun's corona and solar wind",
+      "Mercury's surface",
+      "Venus's atmosphere",
+      "Solar flares",
+      "Sunspots"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about The Sun's corona and solar wind!"
   },
   {
     "question": "What is the Chandrasekhar limit?",
-    "options": ["Maximum mass of a white dwarf star", "Speed of light limit", "Size of the largest star", "Age of oldest stars", "Number of galaxies"],
-    "correct": 0
+    "options": [
+      "Maximum mass of a white dwarf star",
+      "Speed of light limit",
+      "Size of the largest star",
+      "Age of oldest stars",
+      "Number of galaxies"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Maximum mass of a white dwarf star!"
   },
   {
     "question": "What causes the seasons on Earth?",
-    "options": ["Earth's axial tilt", "Distance from the Sun", "Solar activity", "Moon's orbit", "Earth's rotation speed"],
-    "correct": 0
+    "options": [
+      "Earth's axial tilt",
+      "Distance from the Sun",
+      "Solar activity",
+      "Moon's orbit",
+      "Earth's rotation speed"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Earth's axial tilt!"
   },
   {
     "question": "What is the cosmic microwave background?",
-    "options": ["Radiation leftover from the Big Bang", "Heat from stars", "Radio waves from pulsars", "Energy from black holes", "Light from distant galaxies"],
-    "correct": 0
+    "options": [
+      "Radiation leftover from the Big Bang",
+      "Heat from stars",
+      "Radio waves from pulsars",
+      "Energy from black holes",
+      "Light from distant galaxies"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Radiation leftover from the Big Bang!"
   },
   {
     "question": "How many planets in our Solar System have rings?",
-    "options": ["Four (Jupiter, Saturn, Uranus, Neptune)", "One (Saturn)", "Two (Saturn, Uranus)", "Three (Jupiter, Saturn, Neptune)", "Five (all outer planets)"],
-    "correct": 0
+    "options": [
+      "Four (Jupiter, Saturn, Uranus, Neptune)",
+      "One (Saturn)",
+      "Two (Saturn, Uranus)",
+      "Three (Jupiter, Saturn, Neptune)",
+      "Five (all outer planets)"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Four (Jupiter, Saturn, Uranus, Neptune)!"
   },
   {
     "question": "What is Enceladus known for?",
-    "options": ["Geysers of water ice", "Largest crater", "Fastest rotation", "Strongest magnetism", "Highest mountains"],
-    "correct": 0
+    "options": [
+      "Geysers of water ice",
+      "Largest crater",
+      "Fastest rotation",
+      "Strongest magnetism",
+      "Highest mountains"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Geysers of water ice!"
   },
   {
     "question": "What is gravitational lensing?",
-    "options": ["Light bent by massive objects", "Magnification by telescopes", "Light from the Sun", "Mirror effect on planets", "Reflection in atmospheres"],
-    "correct": 0
+    "options": [
+      "Light bent by massive objects",
+      "Magnification by telescopes",
+      "Light from the Sun",
+      "Mirror effect on planets",
+      "Reflection in atmospheres"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Light bent by massive objects!"
   },
   {
     "question": "What is the Fermi Paradox about?",
-    "options": ["Why we haven't found alien life despite high probability", "Why the universe is expanding", "Why stars explode", "Why planets form", "Why galaxies collide"],
-    "correct": 0
+    "options": [
+      "Why we haven't found alien life despite high probability",
+      "Why the universe is expanding",
+      "Why stars explode",
+      "Why planets form",
+      "Why galaxies collide"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Why we haven't found alien life despite high probability!"
   },
   {
     "question": "What is the Trojan asteroids' location?",
-    "options": ["Jupiter's orbital path", "Between Mars and Jupiter", "Near Earth", "Beyond Neptune", "Around Saturn"],
-    "correct": 0
+    "options": [
+      "Jupiter's orbital path",
+      "Between Mars and Jupiter",
+      "Near Earth",
+      "Beyond Neptune",
+      "Around Saturn"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Jupiter's orbital path!"
   },
   {
     "question": "What is the solar wind?",
-    "options": ["Stream of charged particles from the Sun", "Wind patterns on the Sun", "Sunlight pressure", "Magnetic field of the Sun", "Heat transfer from the Sun"],
-    "correct": 0
+    "options": [
+      "Stream of charged particles from the Sun",
+      "Wind patterns on the Sun",
+      "Sunlight pressure",
+      "Magnetic field of the Sun",
+      "Heat transfer from the Sun"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Stream of charged particles from the Sun!"
   },
   {
     "question": "What is the Drake Equation used for?",
-    "options": ["Estimating number of alien civilizations", "Calculating planetary orbits", "Measuring star distances", "Predicting eclipses", "Computing galaxy sizes"],
-    "correct": 0
+    "options": [
+      "Estimating number of alien civilizations",
+      "Calculating planetary orbits",
+      "Measuring star distances",
+      "Predicting eclipses",
+      "Computing galaxy sizes"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Estimating number of alien civilizations!"
   },
   {
     "question": "What are Van Allen radiation belts?",
-    "options": ["Zones of charged particles around Earth", "Asteroid belts", "Dust clouds in space", "Rings around planets", "Cloud formations"],
-    "correct": 0
+    "options": [
+      "Zones of charged particles around Earth",
+      "Asteroid belts",
+      "Dust clouds in space",
+      "Rings around planets",
+      "Cloud formations"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Zones of charged particles around Earth!"
   },
   {
     "question": "What is the Wow! signal?",
-    "options": ["Strong radio signal possibly from space", "Discovery of a pulsar", "First satellite transmission", "Hubble's first image", "Apollo 11 communication"],
-    "correct": 0
+    "options": [
+      "Strong radio signal possibly from space",
+      "Discovery of a pulsar",
+      "First satellite transmission",
+      "Hubble's first image",
+      "Apollo 11 communication"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Strong radio signal possibly from space!"
   },
   {
     "question": "What is the difference between a meteor and a meteorite?",
-    "options": ["Meteorite reaches the ground", "Meteor is larger", "Meteorite is from asteroids", "Meteor is ice-based", "Meteorite is metallic"],
-    "correct": 0
+    "options": [
+      "Meteorite reaches the ground",
+      "Meteor is larger",
+      "Meteorite is from asteroids",
+      "Meteor is ice-based",
+      "Meteorite is metallic"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Meteorite reaches the ground!"
   },
   {
     "question": "What is the habitable zone?",
-    "options": ["Region where liquid water can exist", "Area inside a galaxy", "Safe zone from radiation", "Distance from black holes", "Earth's atmosphere layer"],
-    "correct": 0
+    "options": [
+      "Region where liquid water can exist",
+      "Area inside a galaxy",
+      "Safe zone from radiation",
+      "Distance from black holes",
+      "Earth's atmosphere layer"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Region where liquid water can exist!"
   },
   {
     "question": "What is a brown dwarf?",
-    "options": ["Failed star too small to sustain fusion", "Old dying star", "Type of planet", "Asteroid type", "Comet nucleus"],
-    "correct": 0
+    "options": [
+      "Failed star too small to sustain fusion",
+      "Old dying star",
+      "Type of planet",
+      "Asteroid type",
+      "Comet nucleus"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Failed star too small to sustain fusion!"
   },
   {
     "question": "What is the Voyager Golden Record?",
-    "options": ["Message to potential aliens", "Map of the Solar System", "Star catalog", "Instrument on Voyager", "Award for the mission"],
-    "correct": 0
+    "options": [
+      "Message to potential aliens",
+      "Map of the Solar System",
+      "Star catalog",
+      "Instrument on Voyager",
+      "Award for the mission"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Message to potential aliens!"
   },
   {
     "question": "What are Lagrange points?",
-    "options": ["Positions where gravitational forces balance", "Points on the Moon", "Star locations", "Telescope positions", "Asteroid impacts"],
-    "correct": 0
+    "options": [
+      "Positions where gravitational forces balance",
+      "Points on the Moon",
+      "Star locations",
+      "Telescope positions",
+      "Asteroid impacts"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Positions where gravitational forces balance!"
   },
   {
     "question": "What is Betelgeuse?",
-    "options": ["Red supergiant star in Orion", "Black hole", "Nebula", "Galaxy", "Asteroid"],
-    "correct": 0
+    "options": [
+      "Red supergiant star in Orion",
+      "Black hole",
+      "Nebula",
+      "Galaxy",
+      "Asteroid"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Red supergiant star in Orion!"
   },
   {
     "question": "What is the multiverse theory?",
-    "options": ["Multiple universes may exist", "Multiple stars in systems", "Multiple galaxies", "Many planets", "Different dimensions"],
-    "correct": 0
+    "options": [
+      "Multiple universes may exist",
+      "Multiple stars in systems",
+      "Multiple galaxies",
+      "Many planets",
+      "Different dimensions"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Multiple universes may exist!"
   },
   {
     "question": "What is nuclear fusion in stars?",
-    "options": ["Hydrogen atoms combining to form helium", "Stars exploding", "Planets forming", "Black holes forming", "Stars cooling down"],
-    "correct": 0
+    "options": [
+      "Hydrogen atoms combining to form helium",
+      "Stars exploding",
+      "Planets forming",
+      "Black holes forming",
+      "Stars cooling down"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Hydrogen atoms combining to form helium!"
   },
   {
     "question": "What is the Andromeda Galaxy's fate with the Milky Way?",
-    "options": ["They will collide in ~4.5 billion years", "They will drift apart", "They already merged", "They will stay separate", "One will consume the other"],
-    "correct": 0
+    "options": [
+      "They will collide in ~4.5 billion years",
+      "They will drift apart",
+      "They already merged",
+      "They will stay separate",
+      "One will consume the other"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about They will collide in ~4.5 billion years!"
   },
   {
     "question": "What is Pluto classified as now?",
-    "options": ["Dwarf planet", "Planet", "Asteroid", "Comet", "Moon"],
-    "correct": 0
+    "options": [
+      "Dwarf planet",
+      "Planet",
+      "Asteroid",
+      "Comet",
+      "Moon"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Dwarf planet!"
   },
   {
     "question": "What is the event horizon of a black hole?",
-    "options": ["Point of no return where escape is impossible", "Edge of the visible universe", "Surface of the black hole", "Center of the black hole", "Radiation boundary"],
-    "correct": 0
+    "options": [
+      "Point of no return where escape is impossible",
+      "Edge of the visible universe",
+      "Surface of the black hole",
+      "Center of the black hole",
+      "Radiation boundary"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Point of no return where escape is impossible!"
   },
   {
     "question": "What causes Mercury to have such extreme temperatures?",
-    "options": ["No atmosphere to retain heat", "Too close to the Sun", "Fast rotation", "Volcanic activity", "Thin crust"],
-    "correct": 0
+    "options": [
+      "No atmosphere to retain heat",
+      "Too close to the Sun",
+      "Fast rotation",
+      "Volcanic activity",
+      "Thin crust"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about No atmosphere to retain heat!"
   },
   {
     "question": "What is the Horsehead Nebula?",
-    "options": ["Dark nebula in the Orion constellation", "Planetary nebula", "Supernova remnant", "Star cluster", "Galaxy"],
-    "correct": 0
+    "options": [
+      "Dark nebula in the Orion constellation",
+      "Planetary nebula",
+      "Supernova remnant",
+      "Star cluster",
+      "Galaxy"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Dark nebula in the Orion constellation!"
   },
   {
     "question": "What is stellar nucleosynthesis?",
-    "options": ["Creation of elements inside stars", "Star formation process", "Star death process", "Binary star creation", "Planet formation"],
-    "correct": 0
+    "options": [
+      "Creation of elements inside stars",
+      "Star formation process",
+      "Star death process",
+      "Binary star creation",
+      "Planet formation"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Creation of elements inside stars!"
   },
   {
     "question": "What is the Pioneer Anomaly?",
-    "options": ["Unexplained slowing of Pioneer probes", "Discovery of a new planet", "Communication failure", "Trajectory error", "Equipment malfunction"],
-    "correct": 0
+    "options": [
+      "Unexplained slowing of Pioneer probes",
+      "Discovery of a new planet",
+      "Communication failure",
+      "Trajectory error",
+      "Equipment malfunction"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Unexplained slowing of Pioneer probes!"
   },
   {
     "question": "What are globular clusters?",
-    "options": ["Spherical collections of old stars", "Young star formations", "Galaxy types", "Asteroid groupings", "Comet families"],
-    "correct": 0
+    "options": [
+      "Spherical collections of old stars",
+      "Young star formations",
+      "Galaxy types",
+      "Asteroid groupings",
+      "Comet families"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Spherical collections of old stars!"
   },
   {
     "question": "What is the Hayabusa2 mission?",
-    "options": ["Japanese asteroid sample return", "Mars rover", "Venus probe", "Saturn orbiter", "Lunar lander"],
-    "correct": 0
+    "options": [
+      "Japanese asteroid sample return",
+      "Mars rover",
+      "Venus probe",
+      "Saturn orbiter",
+      "Lunar lander"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Japanese asteroid sample return!"
   },
   {
     "question": "What is Sagittarius A*?",
-    "options": ["Supermassive black hole at Milky Way's center", "Nearby star", "Constellation", "Nebula", "Asteroid"],
-    "correct": 0
+    "options": [
+      "Supermassive black hole at Milky Way's center",
+      "Nearby star",
+      "Constellation",
+      "Nebula",
+      "Asteroid"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Supermassive black hole at Milky Way's center!"
   },
   {
     "question": "What is the observable universe's diameter?",
-    "options": ["93 billion light-years", "13.8 billion light-years", "1 trillion light-years", "46 billion light-years", "200 billion light-years"],
-    "correct": 0
+    "options": [
+      "93 billion light-years",
+      "13.8 billion light-years",
+      "1 trillion light-years",
+      "46 billion light-years",
+      "200 billion light-years"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about 93 billion light-years!"
   },
   {
     "question": "What are magnetars?",
-    "options": ["Neutron stars with extreme magnetic fields", "Magnetic planets", "Metal-rich asteroids", "Charged particles", "Magnetic nebulae"],
-    "correct": 0
+    "options": [
+      "Neutron stars with extreme magnetic fields",
+      "Magnetic planets",
+      "Metal-rich asteroids",
+      "Charged particles",
+      "Magnetic nebulae"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Neutron stars with extreme magnetic fields!"
   },
   {
     "question": "What is panspermia?",
-    "options": ["Theory that life spreads between planets", "Planet formation theory", "Star death process", "Galaxy collision theory", "Universe expansion theory"],
-    "correct": 0
+    "options": [
+      "Theory that life spreads between planets",
+      "Planet formation theory",
+      "Star death process",
+      "Galaxy collision theory",
+      "Universe expansion theory"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Theory that life spreads between planets!"
   },
   {
     "question": "What is the Tarantula Nebula?",
-    "options": ["Star-forming region in Large Magellanic Cloud", "Spider-shaped constellation", "Supernova remnant", "Black hole", "Asteroid belt"],
-    "correct": 0
+    "options": [
+      "Star-forming region in Large Magellanic Cloud",
+      "Spider-shaped constellation",
+      "Supernova remnant",
+      "Black hole",
+      "Asteroid belt"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Star-forming region in Large Magellanic Cloud!"
   },
   {
     "question": "What is the CNO cycle?",
-    "options": ["Nuclear fusion process in massive stars", "Orbit of Neptune", "Carbon molecule formation", "Comet trajectory", "Nebula evolution"],
-    "correct": 0
+    "options": [
+      "Nuclear fusion process in massive stars",
+      "Orbit of Neptune",
+      "Carbon molecule formation",
+      "Comet trajectory",
+      "Nebula evolution"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Nuclear fusion process in massive stars!"
   },
   {
     "question": "What is the cosmic ladder method?",
-    "options": ["Measuring distances in the universe", "Classification of galaxies", "Star evolution stages", "Planet formation steps", "Black hole sizes"],
-    "correct": 0
+    "options": [
+      "Measuring distances in the universe",
+      "Classification of galaxies",
+      "Star evolution stages",
+      "Planet formation steps",
+      "Black hole sizes"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Measuring distances in the universe!"
   },
   {
     "question": "What are mascons on the Moon?",
-    "options": ["Mass concentrations causing gravity anomalies", "Mountain ranges", "Crater types", "Lava flows", "Rock compositions"],
-    "correct": 0
+    "options": [
+      "Mass concentrations causing gravity anomalies",
+      "Mountain ranges",
+      "Crater types",
+      "Lava flows",
+      "Rock compositions"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Mass concentrations causing gravity anomalies!"
   },
   {
     "question": "What is the Alcubierre drive?",
-    "options": ["Theoretical faster-than-light propulsion", "Ion engine type", "Solar sail design", "Chemical rocket", "Nuclear engine"],
-    "correct": 0
+    "options": [
+      "Theoretical faster-than-light propulsion",
+      "Ion engine type",
+      "Solar sail design",
+      "Chemical rocket",
+      "Nuclear engine"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Theoretical faster-than-light propulsion!"
   },
   {
     "question": "What are Population III stars?",
-    "options": ["First generation of stars in the universe", "Stars in globular clusters", "Red giant stars", "White dwarf stars", "Binary stars"],
-    "correct": 0
+    "options": [
+      "First generation of stars in the universe",
+      "Stars in globular clusters",
+      "Red giant stars",
+      "White dwarf stars",
+      "Binary stars"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about First generation of stars in the universe!"
   },
   {
     "question": "What is the Hill sphere?",
-    "options": ["Region where a body's gravity dominates", "Shape of orbits", "Moon's surface area", "Atmosphere boundary", "Solar system edge"],
-    "correct": 0
+    "options": [
+      "Region where a body's gravity dominates",
+      "Shape of orbits",
+      "Moon's surface area",
+      "Atmosphere boundary",
+      "Solar system edge"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Region where a body's gravity dominates!"
   },
   {
     "question": "What is the Bok globule?",
-    "options": ["Dark cloud where stars form", "Type of galaxy", "Black hole variation", "Comet tail", "Asteroid grouping"],
-    "correct": 0
+    "options": [
+      "Dark cloud where stars form",
+      "Type of galaxy",
+      "Black hole variation",
+      "Comet tail",
+      "Asteroid grouping"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Dark cloud where stars form!"
   },
   {
     "question": "What is cosmic inflation?",
-    "options": ["Rapid expansion right after Big Bang", "Star expansion", "Galaxy growth", "Universe's current expansion", "Black hole growth"],
-    "correct": 0
+    "options": [
+      "Rapid expansion right after Big Bang",
+      "Star expansion",
+      "Galaxy growth",
+      "Universe's current expansion",
+      "Black hole growth"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Rapid expansion right after Big Bang!"
   },
   {
     "question": "What is the Eddington limit?",
-    "options": ["Maximum luminosity of a star", "Speed of light", "Black hole size", "Age of stars", "Temperature limit"],
-    "correct": 0
+    "options": [
+      "Maximum luminosity of a star",
+      "Speed of light",
+      "Black hole size",
+      "Age of stars",
+      "Temperature limit"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Maximum luminosity of a star!"
   },
   {
     "question": "What are Cepheid variables?",
-    "options": ["Stars with predictable brightness changes", "Asteroids with changing orbits", "Comets with variable tails", "Planets with changing seasons", "Galaxies with varying size"],
-    "correct": 0
+    "options": [
+      "Stars with predictable brightness changes",
+      "Asteroids with changing orbits",
+      "Comets with variable tails",
+      "Planets with changing seasons",
+      "Galaxies with varying size"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Stars with predictable brightness changes!"
   },
   {
     "question": "What is the Great Rift in astronomy?",
-    "options": ["Dark dust clouds in the Milky Way", "Canyon on Mars", "Crack on Europa", "Asteroid belt gap", "Valley on the Moon"],
-    "correct": 0
+    "options": [
+      "Dark dust clouds in the Milky Way",
+      "Canyon on Mars",
+      "Crack on Europa",
+      "Asteroid belt gap",
+      "Valley on the Moon"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Dark dust clouds in the Milky Way!"
   },
   {
     "question": "What is the Jeans instability?",
-    "options": ["Collapse of gas clouds to form stars", "Black hole formation", "Galaxy collision", "Supernova trigger", "Planet breakup"],
-    "correct": 0
+    "options": [
+      "Collapse of gas clouds to form stars",
+      "Black hole formation",
+      "Galaxy collision",
+      "Supernova trigger",
+      "Planet breakup"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Collapse of gas clouds to form stars!"
   },
   {
     "question": "What are synodic and sidereal periods?",
-    "options": ["Orbital periods relative to Sun vs stars", "Day vs night lengths", "Seasonal changes", "Eclipse cycles", "Tide patterns"],
-    "correct": 0
+    "options": [
+      "Orbital periods relative to Sun vs stars",
+      "Day vs night lengths",
+      "Seasonal changes",
+      "Eclipse cycles",
+      "Tide patterns"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Orbital periods relative to Sun vs stars!"
   },
   {
     "question": "What is the Methuselah star?",
-    "options": ["One of the oldest known stars", "Brightest star", "Largest star", "Fastest moving star", "Closest star"],
-    "correct": 0
+    "options": [
+      "One of the oldest known stars",
+      "Brightest star",
+      "Largest star",
+      "Fastest moving star",
+      "Closest star"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about One of the oldest known stars!"
   },
   {
     "question": "What is Hawking radiation?",
-    "options": ["Theoretical radiation from black holes", "Solar radiation", "Cosmic background radiation", "Radiation from pulsars", "Gamma ray bursts"],
-    "correct": 0
+    "options": [
+      "Theoretical radiation from black holes",
+      "Solar radiation",
+      "Cosmic background radiation",
+      "Radiation from pulsars",
+      "Gamma ray bursts"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Theoretical radiation from black holes!"
   },
   {
     "question": "What is the Local Group?",
-    "options": ["Galaxy cluster containing the Milky Way", "Nearby stars", "Asteroid group", "Planet collection", "Moon system"],
-    "correct": 0
+    "options": [
+      "Galaxy cluster containing the Milky Way",
+      "Nearby stars",
+      "Asteroid group",
+      "Planet collection",
+      "Moon system"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Galaxy cluster containing the Milky Way!"
   },
   {
     "question": "What is nuclear pasta?",
-    "options": ["Theoretical material in neutron star crust", "Star formation stage", "Galaxy shape", "Comet composition", "Asteroid type"],
-    "correct": 0
+    "options": [
+      "Theoretical material in neutron star crust",
+      "Star formation stage",
+      "Galaxy shape",
+      "Comet composition",
+      "Asteroid type"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Theoretical material in neutron star crust!"
   },
   {
     "question": "What is the cosmic web?",
-    "options": ["Large-scale structure of the universe", "Spider nebula", "Galaxy shapes", "Star patterns", "Asteroid paths"],
-    "correct": 0
+    "options": [
+      "Large-scale structure of the universe",
+      "Spider nebula",
+      "Galaxy shapes",
+      "Star patterns",
+      "Asteroid paths"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Large-scale structure of the universe!"
   },
   {
-    "question": "What is the Strömgren sphere?",
-    "options": ["Ionized region around a hot star", "Planet's magnetosphere", "Black hole's event horizon", "Neutron star shell", "Galaxy core"],
-    "correct": 0
+    "question": "What is the Str\u00f6mgren sphere?",
+    "options": [
+      "Ionized region around a hot star",
+      "Planet's magnetosphere",
+      "Black hole's event horizon",
+      "Neutron star shell",
+      "Galaxy core"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Ionized region around a hot star!"
   },
   {
     "question": "What is the Tunguska event?",
-    "options": ["Asteroid/comet explosion over Siberia in 1908", "Supernova observation", "First satellite launch", "Meteor shower", "Eclipse event"],
-    "correct": 0
+    "options": [
+      "Asteroid/comet explosion over Siberia in 1908",
+      "Supernova observation",
+      "First satellite launch",
+      "Meteor shower",
+      "Eclipse event"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Asteroid/comet explosion over Siberia in 1908!"
   },
   {
     "question": "What causes the green color of Uranus and Neptune?",
-    "options": ["Methane in their atmospheres", "Copper compounds", "Algae-like organisms", "Ice crystals", "Reflected Earth light"],
-    "correct": 0
+    "options": [
+      "Methane in their atmospheres",
+      "Copper compounds",
+      "Algae-like organisms",
+      "Ice crystals",
+      "Reflected Earth light"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Methane in their atmospheres!"
   },
   {
     "question": "What is the cosmic neutrino background?",
-    "options": ["Neutrinos left over from the Big Bang", "Solar neutrinos", "Neutrinos from supernovae", "Neutrinos from black holes", "Neutrinos from Earth"],
-    "correct": 0
+    "options": [
+      "Neutrinos left over from the Big Bang",
+      "Solar neutrinos",
+      "Neutrinos from supernovae",
+      "Neutrinos from black holes",
+      "Neutrinos from Earth"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Neutrinos left over from the Big Bang!"
   },
   {
     "question": "What is the Kessler syndrome?",
-    "options": ["Cascade of space debris collisions", "Asteroid impact theory", "Star collision result", "Galaxy merger effect", "Black hole formation"],
-    "correct": 0
+    "options": [
+      "Cascade of space debris collisions",
+      "Asteroid impact theory",
+      "Star collision result",
+      "Galaxy merger effect",
+      "Black hole formation"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Cascade of space debris collisions!"
   },
   {
     "question": "What is the Yarkovsky effect?",
-    "options": ["Force from uneven heating changing asteroid orbits", "Tidal effect on moons", "Solar wind pushing comets", "Gravity assist maneuver", "Light pressure on dust"],
-    "correct": 0
+    "options": [
+      "Force from uneven heating changing asteroid orbits",
+      "Tidal effect on moons",
+      "Solar wind pushing comets",
+      "Gravity assist maneuver",
+      "Light pressure on dust"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Force from uneven heating changing asteroid orbits!"
   },
   {
     "question": "What is a circumstellar habitable zone also called?",
-    "options": ["Goldilocks zone", "Oort zone", "Drake zone", "Hubble zone", "Kepler zone"],
-    "correct": 0
+    "options": [
+      "Goldilocks zone",
+      "Oort zone",
+      "Drake zone",
+      "Hubble zone",
+      "Kepler zone"
+    ],
+    "correct": 0,
+    "explanation": "Interesting fact about Goldilocks zone!"
   }
 ]
