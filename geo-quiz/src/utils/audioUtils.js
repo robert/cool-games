@@ -12,14 +12,19 @@ const getAudioContext = () => {
 // Frequency of middle C (C4)
 const C4 = 261.63;
 
-// Major scale intervals in semitones from the root
+// All chromatic intervals in semitones from the root
 const intervals = {
   'Unison': 0,
+  'Minor 2nd': 1,
   'Major 2nd': 2,
+  'Minor 3rd': 3,
   'Major 3rd': 4,
   'Perfect 4th': 5,
+  'Tritone': 6,
   'Perfect 5th': 7,
+  'Minor 6th': 8,
   'Major 6th': 9,
+  'Minor 7th': 10,
   'Major 7th': 11,
   'Octave': 12
 };
