@@ -9,7 +9,7 @@
 body {
   background: #0a0a0a;
   font-family: 'Press Start 2P', cursive;
-  overflow: hidden;
+  overflow: auto;
 }
 
 #root {
